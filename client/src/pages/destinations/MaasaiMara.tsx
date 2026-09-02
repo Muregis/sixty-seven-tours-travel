@@ -7,8 +7,8 @@ import { imageUrls } from "@/lib/siteData";
 
 const meta = {
   title: "Maasai Mara Guide | Safari & Education | 67 Tours",
-  description: "Maasai Mara safari planning: wildlife viewing, migration timing, access options, and education programme relevance for groups.",
-  keywords: "Maasai Mara, Kenya safari, wildlife reserve, game drives, education tours Maasai Mara, safari planning"
+  description: "Maasai Mara safari planning: wildlife viewing, migration timing, access options, and programme relevance for church groups, chamas, corporate groups, schools, and NGOs.",
+  keywords: "Maasai Mara, Kenya safari, wildlife reserve, game drives, church retreats Maasai Mara, chama tours Maasai Mara, corporate travel Maasai Mara, education tours Maasai Mara, safari planning"
 };
 
 export default function DestinationMaasaiMara() {
@@ -44,15 +44,43 @@ export default function DestinationMaasaiMara() {
             <div className="checklist__item">
               <strong>01</strong>
               <div>
-                <h3>For Safari Groups</h3>
-                <p>Big Five viewing (lion, leopard, elephant, buffalo, rhino). Great Migration (July–October for river crossings). Maasai community visits and cultural context. Hot air balloon operations (weather-dependent).</p>
+                <h3>For Church & Religious Groups</h3>
+                <p>Retreat and reflection opportunities in a natural setting. Group accommodation and meeting spaces at lodges and camps. Spiritual gatherings with wildlife and landscape as backdrop.</p>
               </div>
             </div>
             <div className="checklist__item">
               <strong>02</strong>
               <div>
+                <h3>For Chamas & Investment Groups</h3>
+                <p>Member appreciation trips with wildlife viewing. Networking and fellowship in a unique environment. Leadership retreats with a different backdrop from usual meeting venues.</p>
+              </div>
+            </div>
+            <div className="checklist__item">
+              <strong>03</strong>
+              <div>
+                <h3>For Corporate & Office Groups</h3>
+                <p>Incentive travel and team-building in a safari setting. Corporate retreats with a mix of wildlife activities and meeting facilities. Employee appreciation trips that feel distinct from standard options.</p>
+              </div>
+            </div>
+            <div className="checklist__item">
+              <strong>04</strong>
+              <div>
                 <h3>For Education Groups</h3>
                 <p>Wildlife ecology and behaviour observation. Conservation and human-wildlife conflict discussions. Community-based conservation models. Field research sites (some universities have ongoing projects).</p>
+              </div>
+            </div>
+            <div className="checklist__item">
+              <strong>05</strong>
+              <div>
+                <h3>For NGO Programmes</h3>
+                <p>Conservation programme visits and community meetings. Wildlife research sites and monitoring locations. Links to community-based organisations around the reserve.</p>
+              </div>
+            </div>
+            <div className="checklist__item">
+              <strong>06</strong>
+              <div>
+                <h3>For Safari & Coast Groups</h3>
+                <p>Big Five viewing (lion, leopard, elephant, buffalo, rhino). Great Migration (July–October for river crossings). Maasai community visits and cultural context. Hot air balloon operations (weather-dependent).</p>
               </div>
             </div>
           </div>

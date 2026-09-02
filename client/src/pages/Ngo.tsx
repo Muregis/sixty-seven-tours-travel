@@ -6,9 +6,9 @@ import { PageHeader, RouteTick } from "@/components/SiteShell";
 import { destinations, imageUrls } from "@/lib/siteData";
 
 const meta = {
-  title: "NGO Field Logistics in Kenya | 67 Tours",
-  description: "Multi-site field logistics in Kenya for NGO programmes, including remote access, routing, permits and communication across counties.",
-  keywords: "NGO logistics Kenya, field coordination, humanitarian travel, development programmes, remote access, multi-site movement"
+  title: "NGO Field Logistics Kenya | 67 Tours",
+  description: "Multi-site field logistics across Kenya for NGO programmes: remote access, routing, vehicle planning and communication for field teams.",
+  keywords: "NGO logistics Kenya, field coordination, humanitarian travel, development programmes, remote access, multi-site movement, field logistics"
 };
 
 const operatingRows = [
@@ -47,7 +47,7 @@ const faqs = [
 export default function Ngo() {
   return (
     <>
-      <PageHeader eyebrow="Capability / 02" title="Field logistics that respect the programme." intro="When a team is working across counties, the travel plan is part of programme delivery. We coordinate the Kenya-side movement so staff, equipment, site schedules and reporting commitments can stay aligned." image={imageUrls.ngo} imageAlt="Field staff reviewing a route beside a 4x4 in northern Kenya" />
+      <PageHeader eyebrow="Capability / 05" title="Field logistics that respect the programme." intro="When a team is working across counties, the travel plan is part of programme delivery. We coordinate the Kenya-side movement so staff, equipment, site schedules and reporting commitments can stay aligned." image={imageUrls.ngo} imageAlt="Field staff reviewing a route beside a 4x4 in northern Kenya" />
 
       <section className="page-intro container">
         <aside className="page-rail"><RouteTick label="The problem" number="01" /><p className="page-rail__note">Remote work makes small planning gaps expensive. Build the margin before the vehicle leaves.</p></aside>

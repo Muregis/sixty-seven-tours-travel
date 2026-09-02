@@ -7,15 +7,16 @@ import { RouteTick, SectionIntro } from "@/components/SiteShell";
 
 const meta = {
   title: "67 Tours & Travel | Kenya on the Ground",
-  description: "Kenya-based destination management for education groups, NGOs, safari and coast travel. Clear routing, practical standards, local coordination.",
-  keywords: "Kenya travel, destination management, education tours, NGO logistics, safari, coast travel, field trips"
+  description: "Kenya-based destination management for church groups, chamas, corporate offices, schools, NGOs, safari and coast travel. Clear routing, practical standards, local coordination.",
+  keywords: "Kenya travel, destination management, church retreats, chama travel, corporate team building, school study tours, NGO logistics, safari, coast travel"
 };
 
 const capabilities = [
-  { number: "01", title: "Education & study tours", text: "Curriculum-led programmes with the group movement, student standards, local facilitation and learning context planned together.", href: "/education" },
-  { number: "02", title: "NGO field logistics", text: "Multi-site movements, remote access, realistic route plans and the communication rhythm programme teams need.", href: "/ngo" },
-  { number: "03", title: "Safari travel", text: "Wildlife routes shaped around transfer time, park rhythm, accommodation choices and the pace of the group.", href: "/safari-coast" },
-  { number: "04", title: "Coast travel", text: "Indian Ocean stays, marine activities and coastal movement planned around heat, tides, road legs and arrival windows.", href: "/safari-coast" },
+  { number: "01", title: "Church & religious groups", text: "Retreats, conferences, mission trips and pilgrimages planned around the spiritual and practical needs of congregations, members and ministry teams.", href: "/church-religious" },
+  { number: "02", title: "Chamas & investment groups", text: "Member-benefit travel that respects the trust placed in leadership: transparent costs, clear value, and routes that serve the group's financial and social objectives.", href: "/chamas" },
+  { number: "03", title: "Corporate & office", text: "Team building, end-of-year celebrations, incentive travel, conference attendance and strategic planning retreats aligned to business purpose and professional standards.", href: "/corporate" },
+  { number: "04", title: "Schools & education", text: "Curriculum-led study tours with group movement, student standards, local facilitation and learning context planned together.", href: "/schools" },
+  { number: "05", title: "NGOs & field logistics", text: "Multi-site field movements, remote access, realistic route plans and the communication rhythm programme teams need to stay aligned across counties.", href: "/ngo" },
 ];
 
 export default function Home() {
@@ -25,18 +26,20 @@ export default function Home() {
         <div className="home-hero__copy">
           <RouteTick label="Kenya / on the ground" number="67" />
           <h1>One Kenya plan. <em>Every handover accounted for.</em></h1>
-          <p className="home-hero__lead">67 Tours &amp; Travel coordinates education groups, NGO field teams, safari routes and coast travel across Kenya—linking vehicles, stays, field sites and the people responsible for the day.</p>
+          <p className="home-hero__lead">67 Tours &amp; Travel coordinates movement for Kenya's most accountable group buyers: churches and religious organisations, chamas and investment groups, corporate offices, schools and education groups, and NGOs with field programmes. We handle the vehicles, stays, routes and day-to-day coordination so the organisers can focus on the people and the purpose.</p>
           <Link href="/contact" className="hero-cta">Request a route-specific quote <ArrowUpRight size={17} strokeWidth={1.8} /></Link>
           <div className="hero-note"><span className="hero-note__dot" /><span>For organisers who need the route to work for the people, the programme and the day.</span></div>
           <div className="hero-service-board" aria-label="What we coordinate">
-            <Link href="/education"><strong>Education</strong><span>Study tours</span></Link>
+            <Link href="/church-religious"><strong>Church</strong><span>Retreats, conferences, missions</span></Link>
+            <Link href="/chamas"><strong>Chama</strong><span>Investment group travel</span></Link>
+            <Link href="/corporate"><strong>Corporate</strong><span>Team building, incentives</span></Link>
+            <Link href="/schools"><strong>School</strong><span>Study tours</span></Link>
             <Link href="/ngo"><strong>NGO</strong><span>Field logistics</span></Link>
-            <Link href="/safari-coast"><strong>Safari</strong><span>Wildlife routes</span></Link>
-            <Link href="/safari-coast"><strong>Coast</strong><span>Indian Ocean</span></Link>
+            <Link href="/safari-coast"><strong>Safari &amp; Coast</strong><span>Leisure travel</span></Link>
           </div>
         </div>
         <div className="home-hero__visual">
-          <img src={imageUrls.hero} alt="Students and a field facilitator observing wildlife in Amboseli" />
+          <img src={imageUrls.hero} alt="Group movement planning in Kenya — route board and vehicle coordination" />
           <span className="hero-index">FIELD NOTE / 01</span>
           <div className="route-card">
             <div className="route-card__top"><span>Route board / Kenya</span><MapPin size={15} /></div>
@@ -48,10 +51,12 @@ export default function Home() {
 
       <section className="stat-band" aria-label="Operating focus">
         <div className="stat-band__inner">
-          <div className="stat-band__intro"><RouteTick label="What we coordinate" /><p>Four ways people arrive in the Kenya-side brief.</p></div>
-          <div className="stat"><strong>EDU</strong><span>Study tours built around the learning objective</span></div>
+          <div className="stat-band__intro"><RouteTick label="What we coordinate" /><p>Five ways people arrive in the Kenya-side brief.</p></div>
+          <div className="stat"><strong>CHURCH</strong><span>Retreats, conferences, mission trips and pilgrimages</span></div>
+          <div className="stat"><strong>CHAMA</strong><span>Investment group travel, strategic planning and member benefits</span></div>
+          <div className="stat"><strong>CORP</strong><span>Team building, end-of-year, incentive and conference travel</span></div>
+          <div className="stat"><strong>SCHOOL</strong><span>Study tours and curriculum-led programmes</span></div>
           <div className="stat"><strong>NGO</strong><span>Field logistics across sites and counties</span></div>
-          <div className="stat"><strong>TRAVEL</strong><span>Safari, coast and group movements that connect</span></div>
         </div>
       </section>
 
@@ -68,7 +73,7 @@ export default function Home() {
       <section className="capabilities container">
         <div className="capabilities__header">
           <RouteTick label="What we handle" number="02" />
-          <p>Four service lines, one operating discipline: clear routing, practical standards and local follow-through across Kenya.</p>
+          <p>Five service lines, one operating discipline: clear routing, practical standards and local follow-through across Kenya.</p>
         </div>
         <div className="capabilities__list">
           {capabilities.map((capability) => (
@@ -99,7 +104,6 @@ export default function Home() {
         </div>
       </section>
 
-
       <section className="home-split">
         <div className="home-split__image"><img src={imageUrls.safari} alt="A safari vehicle on a quiet Maasai Mara track" /></div>
         <div className="home-split__copy">
@@ -115,7 +119,7 @@ export default function Home() {
           <RouteTick label="Who we work with" />
           <div>
             <h2>Organisations that depend on reliable Kenya-side coordination.</h2>
-            <p>We work with schools, universities, NGOs and groups that need field movement to be as dependable as the programme itself.</p>
+            <p>We work with churches, chamas, corporate offices, schools, NGOs and groups that need field movement to be as dependable as the programme itself.</p>
           </div>
         </div>
         <div className="trust-placeholder">

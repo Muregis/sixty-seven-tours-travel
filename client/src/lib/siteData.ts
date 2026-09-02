@@ -2,6 +2,9 @@
 
 export const imageUrls = {
   hero: "/manus-storage/67-hero-amboseli_c2fc69d9.jpg",
+  church: "/manus-storage/67-church-retreat_b8e4a21d.jpg",
+  chama: "/manus-storage/67-chama-meeting_c3d9e72f.jpg",
+  corporate: "/manus-storage/67-corporate-teambuilding_a5b8c41e.jpg",
   education: "/manus-storage/67-education-watamu_a3b7ea47.jpg",
   ngo: "/manus-storage/67-ngo-turkana_1bca88c7.jpg",
   safari: "/manus-storage/67-safari-coast_71431b0a.jpg",
@@ -9,8 +12,11 @@ export const imageUrls = {
 };
 
 export const navItems = [
-  { href: "/education", label: "Education & study tours" },
-  { href: "/ngo", label: "NGO field logistics" },
+  { href: "/church-religious", label: "Church & religious groups" },
+  { href: "/chamas", label: "Chamas & investment groups" },
+  { href: "/corporate", label: "Corporate & office" },
+  { href: "/schools", label: "Schools & education" },
+  { href: "/ngo", label: "NGOs & field logistics" },
   { href: "/safari-coast", label: "Safari & coast" },
   { href: "/destinations", label: "Destinations" },
   { href: "/insights", label: "Insights" },
@@ -21,8 +27,11 @@ export const footerGroups = [
   {
     label: "For organisations",
     links: [
-      { href: "/education", label: "Education & study tours" },
-      { href: "/ngo", label: "NGO field logistics" },
+      { href: "/church-religious", label: "Church & religious groups" },
+      { href: "/chamas", label: "Chamas & investment groups" },
+      { href: "/corporate", label: "Corporate & office" },
+      { href: "/schools", label: "Schools & education" },
+      { href: "/ngo", label: "NGOs & field logistics" },
       { href: "/how-we-work", label: "How we work" },
       { href: "/insights", label: "Insights" },
     ],
@@ -41,6 +50,7 @@ export const footerGroups = [
       { href: "/how-we-work", label: "About us" },
       { href: "/faq", label: "FAQ" },
       { href: "/contact", label: "Contact" },
+      { href: "/emergency", label: "Emergency contact" },
     ],
   },
 ];
@@ -48,15 +58,27 @@ export const footerGroups = [
 export const pageMeta: Record<string, { title: string; description: string }> = {
   home: {
     title: "67 Tours & Travel | Kenya on the Ground",
-    description: "Kenya-based destination management for education groups, NGOs, safari and coast travel. Clear routing, practical standards, local coordination.",
+    description: "Kenya-based destination management for church groups, chamas, corporate offices, schools, NGOs, safari and coast travel. Clear routing, practical standards, local coordination.",
   },
-  education: {
-    title: "Education & Study Tours in Kenya | 67 Tours",
-    description: "Curriculum-led Kenya study tours with group movement, local facilitation, student standards and practical planning for schools and universities.",
+  church: {
+    title: "Church Retreats & Mission Trips Kenya | 67 Tours",
+    description: "Kenya church group travel: retreats, conferences, pilgrimages and mission trips planned around the spiritual and practical needs of congregations and ministry teams.",
+  },
+  chama: {
+    title: "Chama & Investment Group Travel Kenya | 67 Tours",
+    description: "Transparent, accountable chama travel for Kenyan investment groups: strategic planning retreats, educational tours, member appreciation and project site visits.",
+  },
+  corporate: {
+    title: "Corporate Team Building Kenya | 67 Tours",
+    description: "Corporate group travel in Kenya: team building, end-of-year celebrations, incentive travel, conference trips and strategy retreats aligned to business purpose.",
+  },
+  schools: {
+    title: "Kenya Study Tours for Schools | 67 Tours",
+    description: "Curriculum-led Kenya study tours for schools and education groups: group movement, student standards, local facilitation and practical field planning.",
   },
   ngo: {
-    title: "NGO Field Logistics in Kenya | 67 Tours",
-    description: "Multi-site field logistics in Kenya for NGO programmes, including remote access, routing, permits and communication across counties.",
+    title: "NGO Field Logistics Kenya | 67 Tours",
+    description: "Multi-site field logistics across Kenya for NGO programmes: remote access, routing, vehicle planning and communication for field teams.",
   },
   safari: {
     title: "Kenya Safari & Coast Itineraries | 67 Tours",

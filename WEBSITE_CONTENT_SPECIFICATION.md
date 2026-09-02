@@ -4,9 +4,9 @@
 1. [Homepage](#homepage)
 2. [Church & Religious Groups](#church--religious-groups)
 3. [Chamas & Investment Groups](#chamas--investment-groups)
-4. [Corporate & Office Groups](#corporate--office-groups)
-5. [Education & Study Tours](#education--study-tours)
-6. [NGO & Field Logistics](#ngo--field-logistics)
+4. [Corporate & Office](#corporate--office)
+5. [Schools & Education](#schools--education)
+6. [NGOs & Field Logistics](#ngos--field-logistics)
 7. [Safari & Coast](#safari--coast)
 8. [Destinations Hub](#destinations-hub)
 9. [Individual Destination Pages](#individual-destination-pages)
@@ -28,19 +28,21 @@
 
 **Headline:** One Kenya plan. Every handover accounted for.
 
-**Lead:** 67 Tours & Travel coordinates education groups, NGO field teams, safari routes and coast travel across Kenya—linking vehicles, stays, field sites and the people responsible for the day.
+**Lead:** 67 Tours & Travel coordinates movement for Kenya's most accountable group buyers: churches and religious organisations, chamas and investment groups, corporate offices, schools and education groups, and NGOs with field programmes. We handle the vehicles, stays, routes and day-to-day coordination so the organisers can focus on the people and the purpose.
 
 **Primary CTA:** Request a route-specific quote →
 
 **Service Navigation:**
-- Education — Study tours
-- NGO — Field logistics  
-- Safari — Wildlife routes
-- Coast — Indian Ocean
+- Church & Religious Groups
+- Chamas & Investment Groups
+- Corporate & Office
+- Schools & Education
+- NGOs & Field Logistics
+- Safari & Coast
 
 **Hero Note:** For organisers who need the route to work for the people, the programme and the day.
 
-**Hero Visual:** Documentary image of students and field facilitator in Amboseli with route card overlay showing "Route board / Kenya — People in motion. Groups, field teams, safari vehicles and coast handovers planned as one connected movement."
+**Hero Visual:** Documentary image of a mixed group movement — perhaps church members loading into a vehicle, students with field notes, or a corporate team at a retreat centre — with route card overlay showing "Route board / Kenya — People in motion. Groups, field teams, safari vehicles and coast handovers planned as one connected movement."
 
 ---
 
@@ -48,12 +50,14 @@
 
 **Eyebrow:** WHAT WE COORDINATE
 
-**Intro:** Four ways people arrive in the Kenya-side brief.
+**Intro:** Five ways people arrive in the Kenya-side brief.
 
 **Stat Items:**
-- **EDU** — Study tours built around the learning objective
+- **CHURCH** — Retreats, conferences, mission trips and pilgrimages
+- **CHAMA** — Investment group travel, strategic planning and member benefits
+- **CORP** — Team building, end-of-year, incentive and conference travel
+- **SCHOOL** — Study tours and curriculum-led programmes
 - **NGO** — Field logistics across sites and counties
-- **TRAVEL** — Safari, coast and group movements that connect
 
 ---
 
@@ -75,25 +79,29 @@ Our job is to make those operating decisions visible early enough to plan around
 
 **Eyebrow:** WHAT WE HANDLE / 02
 
-**Intro:** Four service lines, one operating discipline: clear routing, practical standards and local follow-through across Kenya.
+**Intro:** Five service lines, one operating discipline: clear routing, practical standards and local follow-through across Kenya.
 
 **Capability Cards:**
 
-**01 — Education & Study Tours**
-Curriculum-led programmes with the group movement, student standards, local facilitation and learning context planned together.
-→ Education & Study Tours
+**01 — Church & Religious Groups**
+Retreats, conferences, mission trips and pilgrimages planned around the spiritual and practical needs of congregations, members and ministry teams.
+→ Church & Religious Groups
 
-**02 — NGO Field Logistics**
-Multi-site movements, remote access, realistic route plans and the communication rhythm programme teams need.
-→ NGO Field Logistics
+**02 — Chamas & Investment Groups**
+Member-benefit travel that respects the trust placed in leadership: transparent costs, clear value, and routes that serve the group's financial and social objectives.
+→ Chamas & Investment Groups
 
-**03 — Safari Travel**
-Wildlife routes shaped around transfer time, park rhythm, accommodation choices and the pace of the group.
-→ Safari & Coast
+**03 — Corporate & Office**
+Team building, end-of-year celebrations, incentive travel, conference attendance and strategic planning retreats aligned to business purpose and professional standards.
+→ Corporate & Office
 
-**04 — Coast Travel**
-Indian Ocean stays, marine activities and coastal movement planned around heat, tides, road legs and arrival windows.
-→ Safari & Coast
+**04 — Schools & Education**
+Curriculum-led study tours with group movement, student standards, local facilitation and learning context planned together.
+→ Schools & Education
+
+**05 — NGOs & Field Logistics**
+Multi-site field movements, remote access, realistic route plans and the communication rhythm programme teams need to stay aligned across counties.
+→ NGOs & Field Logistics
 
 ---
 
@@ -136,7 +144,7 @@ Indian Ocean stays, marine activities and coastal movement planned around heat, 
 
 **Headline:** Organisations that depend on reliable Kenya-side coordination.
 
-**Body:** We work with schools, universities, NGOs and groups that need field movement to be as dependable as the programme itself.
+**Body:** We work with churches, chamas, corporate offices, schools, NGOs and other groups that need field movement to be as dependable as the programme itself.
 
 **Placeholder Sections:**
 - **[Partner/Client Logo Section]** — For future placement of organisation logos
@@ -483,7 +491,7 @@ We can suggest destinations based on your objectives, budget, and group preferen
 
 ---
 
-## Corporate & Office Groups
+## Corporate & Office
 
 ### Page Header
 
@@ -655,7 +663,7 @@ Yes. We can suggest venues that match your requirements: team-building facilitie
 
 ---
 
-## Education & Study Tours
+## Schools & Education
 
 ### Page Header
 
@@ -812,7 +820,7 @@ We provide the operational information needed for your risk assessment: route de
 
 ---
 
-## NGO & Field Logistics
+## NGOs & Field Logistics
 
 ### Page Header
 
@@ -1664,7 +1672,7 @@ During field operations, this role maintains the communication rhythm—updates,
 
 **Headline:** Kenya-based, operationally focused.
 
-**Body:** 67 Tours & Travel was founded to address a gap in Kenya's tourism sector: organisations that need field movement to be as dependable as their programme objectives. We work with schools, universities, NGOs, and groups that value operational clarity over marketing promises.
+**Body:** 67 Tours & Travel was founded to address a gap in Kenya's tourism sector: organisations that need field movement to be as dependable as their programme objectives. We work with churches, chamas, corporate offices, schools, NGOs, and groups that value operational clarity over marketing promises.
 
 The company is based in Kenya. All route planning, coordination, and field operations are managed from here. This means the decisions about access, timing, and contingency are made by people who understand the local conditions, not by a remote office.
 
@@ -1869,7 +1877,7 @@ The company is based in Kenya. All route planning, coordination, and field opera
 ### General Questions
 
 **What types of groups do you work with?**
-We work with three main categories: education and study tours (schools, universities), NGO field programmes (development, research, humanitarian), and safari/coast leisure travel (groups, families). Our approach is the same across all three: clear routing, practical standards, and local follow-through.
+We work with five main categories: church and religious groups, chamas and investment groups, corporate and office groups, schools and education groups, and NGO field programmes. Safari and coast travel covers leisure groups. Our approach is the same across all: clear routing, practical standards, and local follow-through.
 
 **How far in advance should we book?**
 Education groups typically book 6–12 months ahead. NGO programmes vary depending on the complexity of the route and the season. Safari and coast travel can be planned with shorter lead times, but key accommodations book quickly during peak seasons. Earlier booking allows more flexibility in route design.
@@ -1878,11 +1886,11 @@ Education groups typically book 6–12 months ahead. NGO programmes vary dependi
 We provide route planning, vehicle coordination, accommodation booking, site access arrangements, local where applicable, and on-the-ground coordination during the trip. The exact scope depends on the programme type and what the travelling organisation needs us to handle.
 
 **Do you handle international flights?**
-No. We handle the Kenya-side movement from the point of arrival. International flights are typically arranged by the travelling organisation or their preferred travel agent. We can provide guidance on arrival times and how they affect the Kenya-side schedule.
+No. We handle the Kenya-side movement from the point of arrival. International flights are typically arranged by the travelling organisation or their preferred travel provider. We can provide guidance on arrival times and how they affect the Kenya-side schedule.
 
 ---
 
-### Education-Specific Questions
+### Schools & Education Questions
 
 **Can you work with specific curriculum requirements?**
 Yes. We need to understand the learning objective, and from there we can suggest destinations and site visits that support the curriculum. The more specific the academic brief, the better we can match the route to the educational goals.
@@ -1898,7 +1906,7 @@ Yes. Dietary requirements, mobility considerations, and medical needs are factor
 
 ---
 
-### NGO-Specific Questions
+### NGOs & Field Logistics Questions
 
 **What information do you need for field logistics planning?**
 We start with the programme calendar, counties or field sites, team size, equipment requirements, fixed dates, and any access or security considerations. The more specific the brief, the more accurate the first route plan.
@@ -1981,7 +1989,16 @@ Changes are handled based on when they occur and what is driving them. Minor adj
 
 **Programme-Specific Guidance:**
 
-**For Education Groups**
+**For Church & Religious Groups**
+Include the type of gathering (retreat, conference, mission trip, pilgrimage), dates, group size, rooming needs, dietary requirements, accessibility considerations and any specific programme requirements (worship space, teaching facilities, fellowship areas).
+
+**For Chamas & Investment Groups**
+Include budget range, group size, trip type (educational tour, strategic planning retreat, member appreciation, project site visit), preferred destinations and any specific member needs or approval processes.
+
+**For Corporate & Office**
+Include the business objective (team building, celebration, strategy retreat, conference, incentive), dates, group size, budget range, meeting facility requirements, activity preferences and any policy compliance needs.
+
+**For Schools & Education Groups**
 Include age range, curriculum or research theme, supervision model and any student accommodation or dietary requirements.
 
 **For NGO Programmes**
@@ -2000,7 +2017,7 @@ Include arrival point, preferred regions, group composition, pace and how much t
 - Your name (required)
 - Organisation (school, NGO or group)
 - Email address (required)
-- Trip type (Education & study tour / NGO field logistics / Safari & coast travel / A combination)
+- Trip type (Church & religious / Chama & investment / Corporate & office / Schools & education / NGO field logistics / Safari & coast / A combination)
 - Dates or date range (e.g. July 2027 / flexible)
 - Group size (approximate number)
 - Route and brief (Where are you starting, which places or field sites are involved, and what does the trip need to achieve?)
@@ -2475,9 +2492,11 @@ Transport cost = (Daily rate × days) + (Transfer fees)
 ### Primary Navigation
 
 **Header Navigation (Desktop):**
-- Home
-- Education & Study Tours
-- NGO Field Logistics
+- Church & Religious Groups
+- Chamas & Investment Groups
+- Corporate & Office
+- Schools & Education
+- NGOs & Field Logistics
 - Safari & Coast
 - Destinations
 - Insights
@@ -2491,8 +2510,11 @@ Transport cost = (Daily rate × days) + (Transfer fees)
 
 **Footer Navigation:**
 **For Organisations:**
-- Education & Study Tours
-- NGO Field Logistics
+- Church & Religious Groups
+- Chamas & Investment Groups
+- Corporate & Office
+- Schools & Education
+- NGOs & Field Logistics
 - How We Work
 - Insights
 
@@ -2515,12 +2537,11 @@ Transport cost = (Daily rate × days) + (Transfer fees)
 
 ```
 /
-├── /education
-│   ├── /education/destinations
-│   └── /education/faq
+├── /church-religious
+├── /chamas
+├── /corporate
+├── /schools
 ├── /ngo
-│   ├── /ngo/destinations
-│   └── /ngo/faq
 ├── /safari-coast
 │   ├── /safari-coast/destinations
 │   └── /safari-coast/faq
@@ -2554,17 +2575,26 @@ Transport cost = (Daily rate × days) + (Transfer fees)
 ### Information Architecture Principles
 
 **Hierarchy:**
-- Education and NGO are primary (top-level navigation)
+- Church, Chamas, Corporate, Schools, and NGOs are primary (top-level navigation)
 - Safari & Coast is secondary but prominent
 - Destinations are organised by relevance to trip type
 - Insights support the primary service lines
 
 **User Paths:**
-**Education Coordinator Path:**
-Home → Education → Destinations → How We Work → Request Quote
+**Church Administrator Path:**
+Home → Church & Religious Groups → Destinations → How We Work → Request Quote
 
-**NGO Programme Coordinator Path:**
-Home → NGO → Destinations → How We Work → Request Quote
+**Chama Official Path:**
+Home → Chamas & Investment Groups → Destinations → How We Work → Request Quote
+
+**Corporate Manager Path:**
+Home → Corporate & Office → Destinations → How We Work → Request Quote
+
+**School Coordinator Path:**
+Home → Schools & Education → Destinations → How We Work → Request Quote
+
+**NGO Coordinator Path:**
+Home → NGOs & Field Logistics → Destinations → How We Work → Request Quote
 
 **Safari/Coast Planner Path:**
 Home → Safari & Coast → Destinations → Request Quote
@@ -2608,19 +2638,37 @@ Home → Destinations → Specific Destination → Relevant Service → Request 
 
 ### Homepage
 **Meta Title:** 67 Tours & Travel | Kenya on the Ground
-**Meta Description:** Kenya-based destination management for education groups, NGOs, safari and coast travel. Clear routing, practical standards, local coordination.
+**Meta Description:** Kenya-based destination management for church groups, chamas, corporate offices, schools, NGOs, safari and coast travel. Clear routing, practical standards, local coordination.
 
 ---
 
-### Education & Study Tours
-**Meta Title:** Education & Study Tours in Kenya | 67 Tours
-**Meta Description:** Curriculum-led Kenya study tours with group movement, local facilitation, student standards and practical planning for schools and universities.
+### Church & Religious Groups
+**Meta Title:** Church Retreats & Mission Trips Kenya | 67 Tours
+**Meta Description:** Kenya church group travel: retreats, conferences, pilgrimages and mission trips planned around the spiritual and practical needs of congregations and ministry teams.
 
 ---
 
-### NGO & Field Logistics
-**Meta Title:** NGO Field Logistics in Kenya | 67 Tours
-**Meta Description:** Multi-site field logistics in Kenya for NGO programmes, including remote access, routing, permits and communication across counties.
+### Chamas & Investment Groups
+**Meta Title:** Chama & Investment Group Travel Kenya | 67 Tours
+**Meta Description:** Transparent, accountable chama travel for Kenyan investment groups: strategic planning retreats, educational tours, member appreciation and project site visits.
+
+---
+
+### Corporate & Office
+**Meta Title:** Corporate Team Building Kenya | 67 Tours
+**Meta Description:** Corporate group travel in Kenya: team building, end-of-year celebrations, incentive travel, conference trips and strategy retreats aligned to business purpose.
+
+---
+
+### Schools & Education
+**Meta Title:** Kenya Study Tours for Schools | 67 Tours
+**Meta Description:** Curriculum-led Kenya study tours for schools and education groups: group movement, student standards, local facilitation and practical field planning.
+
+---
+
+### NGOs & Field Logistics
+**Meta Title:** NGO Field Logistics Kenya | 67 Tours
+**Meta Description:** Multi-site field logistics across Kenya for NGO programmes: remote access, routing, vehicle planning and communication for field teams.
 
 ---
 
@@ -2819,7 +2867,7 @@ All new features must integrate with the existing design system:
 
 ## Conclusion
 
-This specification provides the complete content, structure, and feature requirements to transform 67 Tours & Travel from a strong foundation into a top-tier tour company website. The content maintains the operational, senior tone that distinguishes the brand, while the feature specifications address the critical gaps in trust, interactivity, and conversion.
+This specification provides the complete content, structure, and feature requirements to transform 67 Tours & Travel from a strong foundation into a leading Kenyan group-travel website. The content maintains the operational, senior tone that distinguishes the brand, while the feature specifications address the critical gaps in trust, interactivity, and conversion.
 
 **Key Differentiators Preserved:**
 - Operational clarity over marketing promises

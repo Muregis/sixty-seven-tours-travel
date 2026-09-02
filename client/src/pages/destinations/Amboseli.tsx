@@ -7,8 +7,8 @@ import { imageUrls } from "@/lib/siteData";
 
 const meta = {
   title: "Amboseli Guide | Wildlife & Kilimanjaro | 67 Tours",
-  description: "Amboseli safari and education: elephant populations, Kilimanjaro views, compact park size, and practical route planning.",
-  keywords: "Amboseli, Amboseli National Park, Kenya wildlife, water systems, conservation education, safari Amboseli"
+  description: "Amboseli safari and education: elephant populations, Kilimanjaro views, compact park size, and practical route planning for church groups, chamas, corporate groups, schools, and NGOs.",
+  keywords: "Amboseli, Amboseli National Park, Kenya wildlife, water systems, conservation education, church retreats Amboseli, chama tours Amboseli, corporate travel Amboseli, education tours Amboseli, safari Amboseli"
 };
 
 export default function DestinationAmboseli() {
@@ -44,15 +44,43 @@ export default function DestinationAmboseli() {
             <div className="checklist__item">
               <strong>01</strong>
               <div>
-                <h3>For Safari Groups</h3>
-                <p>Large elephant herds—Amboseli is known for elephant research. Kilimanjaro views (weather-dependent, best early morning). Birdlife around the swamps. Maasai community interaction.</p>
+                <h3>For Church & Religious Groups</h3>
+                <p>Retreat and reflection opportunities in a natural setting. Group accommodation and meeting spaces at lodges. Spiritual gatherings with wildlife and landscape as backdrop.</p>
               </div>
             </div>
             <div className="checklist__item">
               <strong>02</strong>
               <div>
+                <h3>For Chamas & Investment Groups</h3>
+                <p>Member appreciation trips with wildlife viewing. Networking and fellowship in a unique environment. Leadership retreats with a different backdrop from usual meeting venues.</p>
+              </div>
+            </div>
+            <div className="checklist__item">
+              <strong>03</strong>
+              <div>
+                <h3>For Corporate & Office Groups</h3>
+                <p>Incentive travel and team-building in a safari setting. Corporate retreats with a mix of wildlife activities and meeting facilities. Employee appreciation trips that feel distinct from standard options.</p>
+              </div>
+            </div>
+            <div className="checklist__item">
+              <strong>04</strong>
+              <div>
                 <h3>For Education Groups</h3>
                 <p>Elephant behaviour and conservation (Amboseli Elephant Research Project context). Human-wildlife conflict around park boundaries. Water and land use questions. Community conservation models.</p>
+              </div>
+            </div>
+            <div className="checklist__item">
+              <strong>05</strong>
+              <div>
+                <h3>For NGO Programmes</h3>
+                <p>Conservation programme visits and community meetings. Wildlife research sites and monitoring locations. Links to community-based organisations around the park.</p>
+              </div>
+            </div>
+            <div className="checklist__item">
+              <strong>06</strong>
+              <div>
+                <h3>For Safari Groups</h3>
+                <p>Large elephant herds—Amboseli is known for elephant research. Kilimanjaro views (weather-dependent, best early morning). Birdlife around the swamps. Maasai community interaction.</p>
               </div>
             </div>
           </div>

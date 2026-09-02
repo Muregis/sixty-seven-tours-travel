@@ -6,9 +6,9 @@ import { PageHeader, RouteTick } from "@/components/SiteShell";
 import { imageUrls } from "@/lib/siteData";
 
 const meta = {
-  title: "Northern Kenya Guide | NGO Field Logistics | 67 Tours",
-  description: "Northern Kenya and Turkana field logistics: remote access, vehicle planning, fuel and communication for NGO programmes.",
-  keywords: "Northern Kenya, remote access, field logistics, Turkana, NGO programmes, adventure travel, remote Kenya"
+  title: "Northern Kenya Guide | Field Logistics | 67 Tours",
+  description: "Northern Kenya and Turkana field logistics: remote access, vehicle planning, fuel and communication for church groups, chamas, corporate groups, schools, NGOs, and safari travellers.",
+  keywords: "Northern Kenya, remote access, field logistics, Turkana, NGO programmes, adventure travel, remote Kenya, church retreats northern Kenya, chama tours northern Kenya, corporate travel northern Kenya"
 };
 
 export default function DestinationNorthernKenya() {
@@ -44,12 +44,40 @@ export default function DestinationNorthernKenya() {
             <div className="checklist__item">
               <strong>01</strong>
               <div>
+                <h3>For Church & Religious Groups</h3>
+                <p>Mission trip and outreach destinations with local community connections. Pilgrimage sites with cultural and spiritual significance. Venues for reflection in remote and less-developed settings.</p>
+              </div>
+            </div>
+            <div className="checklist__item">
+              <strong>02</strong>
+              <div>
+                <h3>For Chamas & Investment Groups</h3>
+                <p>Educational visits to agricultural and pastoral projects in Turkana and northern Kenya. Learning about alternative livelihoods and climate adaptation. Unique member appreciation trips for groups seeking different experiences.</p>
+              </div>
+            </div>
+            <div className="checklist__item">
+              <strong>03</strong>
+              <div>
+                <h3>For Corporate & Office Groups</h3>
+                <p>Specialised incentive travel and team-building in remote settings. Corporate social responsibility programme visits to northern Kenya communities. Leadership retreats in distinctive environments.</p>
+              </div>
+            </div>
+            <div className="checklist__item">
+              <strong>04</strong>
+              <div>
+                <h3>For Education Groups</h3>
+                <p>Pastoral livelihoods and climate adaptation studies. Turkana culture and community context. Geological and geographical features of the northern frontier. Field research in remote settings.</p>
+              </div>
+            </div>
+            <div className="checklist__item">
+              <strong>05</strong>
+              <div>
                 <h3>For NGO Programmes</h3>
                 <p>Turkana: Development programmes, pastoral livelihoods, water access, climate adaptation research. Northern frontier: Remote field sites, cross-border programmes, security-sensitive areas (requires additional planning).</p>
               </div>
             </div>
             <div className="checklist__item">
-              <strong>02</strong>
+              <strong>06</strong>
               <div>
                 <h3>For Safari Groups</h3>
                 <p>Samburu: Different wildlife species (Grevy's zebra, reticulated giraffe, Somali ostrich), drier landscape, cultural visits to Samburu communities. Specialised northern circuits for experienced travellers.</p>

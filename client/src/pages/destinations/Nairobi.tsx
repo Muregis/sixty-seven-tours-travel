@@ -7,8 +7,8 @@ import { imageUrls } from "@/lib/siteData";
 
 const meta = {
   title: "Nairobi Guide | Kenya Programme Hub | 67 Tours",
-  description: "Nairobi as education and NGO hub: museums, conservation organisations, urban systems, and practical starting point for Kenya programmes.",
-  keywords: "Nairobi Kenya, Nairobi travel, education tours Nairobi, NGO programmes Nairobi, city field sites, conservation organisations"
+  description: "Nairobi as church, chama, corporate, education and NGO hub: museums, conservation organisations, urban systems, retreat centres, and practical starting point for Kenya programmes.",
+  keywords: "Nairobi Kenya, Nairobi travel, church retreats Nairobi, chama tours Nairobi, corporate travel Nairobi, education tours Nairobi, NGO programmes Nairobi, city field sites, conservation organisations"
 };
 
 export default function DestinationNairobi() {
@@ -17,7 +17,7 @@ export default function DestinationNairobi() {
       <PageHeader 
         eyebrow="DESTINATION / NAIROBI" 
         title="The operating hub for most Kenya programmes." 
-        intro="Nairobi is where education groups arrive, where NGO teams mobilise, and where the practical side of Kenya trips begins. It is also a destination in its own right for urban systems, conservation organisations, and cultural context." 
+        intro="Nairobi is where church groups arrive, where chamas and corporate offices mobilise, where education groups start their study tours, and where NGO teams prepare for field movement. It is also a destination in its own right for urban systems, conservation organisations, retreat planning, and cultural context." 
       />
 
       <section className="page-intro container">
@@ -40,29 +40,50 @@ export default function DestinationNairobi() {
               <p>The city is not just a transit point—it has specific relevance for education, NGO, and leisure groups.</p>
             </div>
           </div>
-          <div className="checklist">
-            <div className="checklist__item">
-              <strong>01</strong>
-              <div>
-                <h3>For Education Groups</h3>
-                <p>Museums: National Museum, Snake Park, Karen Blixen Museum. Conservation organisations: WWF-Kenya, African Wildlife Foundation, local conservation NGOs. Urban systems: Market visits, industrial tours, governance institutions. Starting point for Rift Valley and coastal routes.</p>
+            <div className="checklist">
+              <div className="checklist__item">
+                <strong>01</strong>
+                <div>
+                  <h3>For Church & Religious Groups</h3>
+                  <p>Retreat and conference venues around Nairobi and in the Rift Valley. Planning centres for mission trips and pilgrimages. Coordination for large group movements to coastal and upcountry destinations.</p>
+                </div>
+              </div>
+              <div className="checklist__item">
+                <strong>02</strong>
+                <div>
+                  <h3>For Chamas & Investment Groups</h3>
+                  <p>Business enterprises, manufacturing sites, and agricultural projects for educational visits. Venues for strategic planning retreats and member appreciation trips. Coordination for multi-site investment tours.</p>
+                </div>
+              </div>
+              <div className="checklist__item">
+                <strong>03</strong>
+                <div>
+                  <h3>For Corporate & Office Groups</h3>
+                  <p>Conference facilities and hotels for corporate events, training sessions, and meetings. Venues for team-building activities and strategy retreats. Coordination for incentive travel and end-of-year celebrations.</p>
+                </div>
+              </div>
+              <div className="checklist__item">
+                <strong>04</strong>
+                <div>
+                  <h3>For Education Groups</h3>
+                  <p>Museums: National Museum, Snake Park, Karen Blixen Museum. Conservation organisations: WWF-Kenya, African Wildlife Foundation, local conservation NGOs. Urban systems: Market visits, industrial tours, governance institutions. Starting point for Rift Valley and coastal routes.</p>
+                </div>
+              </div>
+              <div className="checklist__item">
+                <strong>05</strong>
+                <div>
+                  <h3>For NGO Programmes</h3>
+                  <p>UN and agency offices. NGO headquarters and coordination hubs. Equipment procurement and logistics bases. Medical facilities and evacuation points.</p>
+                </div>
+              </div>
+              <div className="checklist__item">
+                <strong>06</strong>
+                <div>
+                  <h3>For Safari & Coast Groups</h3>
+                  <p>Transit point for safari departures. City orientation before or after field time. Shopping for last-minute supplies.</p>
+                </div>
               </div>
             </div>
-            <div className="checklist__item">
-              <strong>02</strong>
-              <div>
-                <h3>For NGO Programmes</h3>
-                <p>UN and agency offices. NGO headquarters and coordination hubs. Equipment procurement and logistics bases. Medical facilities and evacuation points.</p>
-              </div>
-            </div>
-            <div className="checklist__item">
-              <strong>03</strong>
-              <div>
-                <h3>For Safari & Coast Groups</h3>
-                <p>Transit point for safari departures. City orientation before or after field time. Shopping for last-minute supplies.</p>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 

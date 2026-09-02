@@ -7,8 +7,8 @@ import { imageUrls } from "@/lib/siteData";
 
 const meta = {
   title: "Kakamega Guide | Western Kenya | 67 Tours",
-  description: "Kakamega forest ecology, western Kenya community context, and education programme planning for forest and community studies.",
-  keywords: "Kakamega, Kakamega Forest, Western Kenya, forest ecology, community context, education tours, field programmes"
+  description: "Kakamega forest ecology, western Kenya community context, and education programme planning for forest and community studies for church groups, chamas, corporate groups, schools, and NGOs.",
+  keywords: "Kakamega, Kakamega Forest, Western Kenya, forest ecology, community context, education tours, field programmes, church retreats Kakamega, chama tours Kakamega, corporate travel Kakamega"
 };
 
 export default function DestinationKakamega() {
@@ -44,12 +44,33 @@ export default function DestinationKakamega() {
             <div className="checklist__item">
               <strong>01</strong>
               <div>
+                <h3>For Church & Religious Groups</h3>
+                <p>Mission trip and outreach destinations with local church connections. Venues for fellowship and spiritual gatherings in a community setting. Coordination with local churches and community organisations.</p>
+              </div>
+            </div>
+            <div className="checklist__item">
+              <strong>02</strong>
+              <div>
+                <h3>For Chamas & Investment Groups</h3>
+                <p>Agricultural visits to successful farms, cooperatives, and agricultural projects. Educational tours to learn from western Kenya business models. Networking with local business communities.</p>
+              </div>
+            </div>
+            <div className="checklist__item">
+              <strong>03</strong>
+              <div>
+                <h3>For Corporate & Office Groups</h3>
+                <p>Business visits to agricultural and manufacturing enterprises in western Kenya. Team-building activities in a different regional context. Corporate social responsibility programme visits.</p>
+              </div>
+            </div>
+            <div className="checklist__item">
+              <strong>04</strong>
+              <div>
                 <h3>For Education Groups</h3>
                 <p>Kakamega Forest: Tropical rainforest ecology, birdlife (including species not found elsewhere in Kenya), forest conservation. Western Kenya: Community-based programmes, agricultural systems, Lake Victoria context.</p>
               </div>
             </div>
             <div className="checklist__item">
-              <strong>02</strong>
+              <strong>05</strong>
               <div>
                 <h3>For NGO Programmes</h3>
                 <p>Community development programmes around Kisumu and Kakamega. Health and education field sites. Lake Victoria basin programmes. Agricultural and livelihood projects.</p>

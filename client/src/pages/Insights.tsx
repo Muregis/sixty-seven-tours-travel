@@ -6,8 +6,8 @@ import { ArrowUpRight } from "lucide-react";
 
 const meta = {
   title: "Kenya Operations Insights | 67 Tours & Travel",
-  description: "Practical articles on Kenya education planning, NGO field logistics, safari planning, and seasonal considerations for programme coordinators.",
-  keywords: "Kenya travel insights, field notes, route observations, travel writing, Kenya destinations, education programmes"
+  description: "Practical articles on Kenya church group travel, chama travel, corporate travel, school study tours, NGO field logistics, safari planning, and seasonal considerations for programme coordinators.",
+  keywords: "Kenya travel insights, field notes, route observations, travel writing, Kenya destinations, church retreats, chama travel, corporate team building, education programmes, NGO logistics"
 };
 
 import { Link } from "wouter";
@@ -15,19 +15,34 @@ import { PageHeader, RouteTick } from "@/components/SiteShell";
 
 const articleCategories = [
   {
+    id: "church-religious",
+    name: "Church & Religious Groups",
+    description: "Retreat planning, mission trip logistics, pilgrimage routes, and conference travel for congregations and ministry teams.",
+  },
+  {
+    id: "chamas",
+    name: "Chamas & Investment Groups",
+    description: "Budgeting for group travel, member-benefit planning, educational tours, and strategic retreats for Kenyan investment groups.",
+  },
+  {
+    id: "corporate",
+    name: "Corporate & Office",
+    description: "Team-building logistics, end-of-year planning, incentive travel, conference coordination, and strategy retreats for organisations.",
+  },
+  {
     id: "education-planning",
-    name: "Education Planning",
-    description: "Curriculum fit, destination selection, student supervision, and risk assessment support.",
+    name: "Schools & Education",
+    description: "Curriculum fit, destination selection, student supervision, risk assessment support, and seasonal considerations for study tours.",
   },
   {
     id: "ngo-logistics",
     name: "NGO Field Logistics",
-    description: "Remote access planning, multi-site coordination, communication in the field, and equipment planning.",
+    description: "Remote access planning, multi-site coordination, communication in the field, equipment planning, and contingency for field programmes.",
   },
   {
     id: "safari-coast",
-    name: "Safari & Coast Planning",
-    description: "Seasonal wildlife patterns, transfer timing, route structure, and coastal activity planning.",
+    name: "Safari & Coast",
+    description: "Seasonal wildlife patterns, transfer timing, route structure, coastal activity planning, and group pace for leisure travel.",
   },
   {
     id: "kenya-context",
@@ -286,8 +301,8 @@ export default function Insights() {
     <>
       <PageHeader 
         eyebrow="INSIGHTS / KENYA OPERATIONS" 
-        title="Practical information for education and NGO programme planners." 
-        intro="These articles address the questions that come up when planning Kenya-side movement: seasonal considerations, logistics, preparation, and the operational realities of field work and study tours." 
+        title="Practical information for programme coordinators and group planners." 
+        intro="These articles address the questions that come up when planning Kenya-side movement for church groups, chamas, corporate offices, schools, NGOs, and safari travellers: seasonal considerations, logistics, preparation, and the operational realities of field work and study tours." 
       />
 
       <section className="page-intro container">
@@ -296,7 +311,7 @@ export default function Insights() {
           <p className="page-rail__note">We write for the people who actually plan and coordinate these trips, not for casual browsers.</p>
         </aside>
         <div className="page-intro__body">
-          <p>The insights here are organised by the questions education coordinators and NGO programme managers actually ask. There is no marketing content—only practical information that helps with route planning, risk assessment, and programme design.</p>
+          <p>The insights here are organised by the questions church administrators, chama officials, HR managers, school heads, and NGO coordinators actually ask. There is no marketing content—only practical information that helps with route planning, risk assessment, and programme design.</p>
           <p>Articles are categorised by programme type and topic. Each article is written with specific operational knowledge: routes, access, group movement realities, and seasonal factors.</p>
         </div>
       </section>
@@ -322,10 +337,10 @@ export default function Insights() {
       <section className="recommended-articles container">
         <div className="route-section__header">
           <RouteTick label="Recommended Articles" number="03" />
-          <div>
-            <h2>Articles in development.</h2>
-            <p>These are the topics we are currently developing based on the questions education and NGO coordinators ask most often.</p>
-          </div>
+            <div>
+              <h2>Articles in development.</h2>
+              <p>These are the topics we are currently developing based on the questions church administrators, chama officials, HR managers, school heads, and NGO coordinators ask most often.</p>
+            </div>
         </div>
         <div className="article-list">
           {recommendedArticles.map((article) => (
@@ -355,7 +370,7 @@ export default function Insights() {
           <RouteTick label="Stay Informed" number="04" />
           <div>
             <h2>Get practical updates, not marketing content.</h2>
-            <p>We send occasional updates on seasonal considerations, route access changes, and practical information for education and NGO programme planners.</p>
+            <p>We send occasional updates on seasonal considerations, route access changes, and practical information for church groups, chamas, corporate offices, schools, NGOs, and safari travellers.</p>
           </div>
         </div>
         <div className="newsletter-form">
@@ -368,7 +383,10 @@ export default function Insights() {
               <label htmlFor="insights-type">Organisation type</label>
               <select id="insights-type" name="type" defaultValue="">
                 <option value="" disabled>Select one</option>
-                <option value="education">Education / School / University</option>
+                <option value="church">Church & religious group</option>
+                <option value="chama">Chama & investment group</option>
+                <option value="corporate">Corporate & office</option>
+                <option value="schools">Schools & education</option>
                 <option value="ngo">NGO / Development / Research</option>
                 <option value="leisure">Safari / Coast / Leisure</option>
               </select>

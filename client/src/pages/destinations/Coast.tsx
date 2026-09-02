@@ -7,8 +7,8 @@ import { imageUrls } from "@/lib/siteData";
 
 const meta = {
   title: "Watamu Coast Guide | Marine & Education | 67 Tours",
-  description: "Watamu marine park, coastal education, mangrove ecosystems, and practical planning for coastal programmes and leisure travel.",
-  keywords: "Kenya Coast, Watamu, marine systems, mangroves, coastal education, beach holidays, Watamu travel"
+  description: "Watamu marine park, coastal education, mangrove ecosystems, and practical planning for coastal programmes and leisure travel for church groups, chamas, corporate groups, schools, and NGOs.",
+  keywords: "Kenya Coast, Watamu, marine systems, mangroves, coastal education, beach holidays, Watamu travel, church retreats Watamu, chama tours coast, corporate travel coast, education tours coast"
 };
 
 export default function DestinationCoast() {
@@ -44,12 +44,40 @@ export default function DestinationCoast() {
             <div className="checklist__item">
               <strong>01</strong>
               <div>
+                <h3>For Church & Religious Groups</h3>
+                <p>Coastal retreat and prayer venues. Spiritual gatherings with ocean and beach setting. Fellowship opportunities in a different environment from Nairobi and upcountry.</p>
+              </div>
+            </div>
+            <div className="checklist__item">
+              <strong>02</strong>
+              <div>
+                <h3>For Chamas & Investment Groups</h3>
+                <p>Strategic planning retreats at coastal resorts. Member appreciation trips with beach and marine activities. Networking in a relaxed coastal environment.</p>
+              </div>
+            </div>
+            <div className="checklist__item">
+              <strong>03</strong>
+              <div>
+                <h3>For Corporate & Office Groups</h3>
+                <p>Incentive travel and end-of-year celebrations at coastal resorts. Conference facilities with beach access. Team-building activities that combine business with coastal leisure.</p>
+              </div>
+            </div>
+            <div className="checklist__item">
+              <strong>04</strong>
+              <div>
                 <h3>For Education Groups</h3>
                 <p>Watamu Marine National Park—coral reefs, fish species, turtle conservation. Mangrove ecosystems and coastal deforestation questions. Coastal community livelihoods (fishing, tourism). Swahili culture and history (nearby Gede ruins).</p>
               </div>
             </div>
             <div className="checklist__item">
-              <strong>02</strong>
+              <strong>05</strong>
+              <div>
+                <h3>For NGO Programmes</h3>
+                <p>Marine conservation programmes and community-based coastal management. Turtle conservation projects and mangrove restoration. Coastal community development initiatives.</p>
+              </div>
+            </div>
+            <div className="checklist__item">
+              <strong>06</strong>
               <div>
                 <h3>For Leisure Groups</h3>
                 <p>Beach time and water activities. Marine park snorkelling and diving. Cultural visits and Swahili cuisine. Rest and recovery after safari segments.</p>

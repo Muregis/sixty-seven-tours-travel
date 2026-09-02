@@ -6,9 +6,9 @@ import { PageHeader, RouteTick, SectionIntro } from "@/components/SiteShell";
 import { destinations, imageUrls } from "@/lib/siteData";
 
 const meta = {
-  title: "Education & Study Tours in Kenya | 67 Tours",
-  description: "Curriculum-led Kenya study tours with group movement, local facilitation, student standards and practical planning for schools and universities.",
-  keywords: "Kenya education tours, study tours, field trips, curriculum-aligned travel, student travel, academic programmes"
+  title: "Kenya Study Tours for Schools | 67 Tours",
+  description: "Curriculum-led Kenya study tours for schools and education groups: group movement, student standards, local facilitation and practical field planning.",
+  keywords: "Kenya education tours, study tours, field trips, curriculum-aligned travel, student travel, academic programmes, school trips Kenya"
 };
 
 const checklist = [
@@ -47,10 +47,10 @@ const faqs = [
   }
 ];
 
-export default function Education() {
+export default function Schools() {
   return (
     <>
-      <PageHeader eyebrow="Capability / 01" title="Education trips that hold up outside the classroom." intro="You are responsible for the learning objective, the students and the timetable. We help make the Kenya side of that responsibility specific: which sites fit, how the group moves, what the accommodation needs to do and who is present when the plan meets the ground." image={imageUrls.education} imageAlt="Students taking notes during a supervised marine field lesson near Watamu" />
+      <PageHeader eyebrow="Capability / 04" title="Education trips that hold up outside the classroom." intro="You are responsible for the learning objective, the students and the timetable. We help make the Kenya side of that responsibility specific: which sites fit, how the group moves, what the accommodation needs to do and who is present when the plan meets the ground." image={imageUrls.education} imageAlt="Students taking notes during a supervised marine field lesson near Watamu" />
 
       <section className="page-intro container">
         <aside className="page-rail"><RouteTick label="The brief" number="01" /><p className="page-rail__note">Study tours work best when the academic question and the operating plan are written together.</p></aside>

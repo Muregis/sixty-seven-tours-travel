@@ -6,14 +6,14 @@ import { RouteTick } from "@/components/SiteShell";
 
 const meta = {
   title: "Request a Kenya Travel Quote | 67 Tours",
-  description: "Share your dates, group, route and programme needs so 67 Tours & Travel can prepare an accurate Kenya quote for education, NGO or safari travel.",
+  description: "Share your dates, group, route and programme needs so 67 Tours & Travel can prepare an accurate Kenya quote for church groups, chamas, corporate offices, schools, NGOs, safari and coast travel.",
   keywords: "contact Kenya travel, request quote, travel enquiry, Kenya destination management, route planning quote"
 };
 
 const faqs = [
   {
     question: "What information do you need to provide a quote?",
-    answer: "We need dates, group size, arrival point, route ideas, and the programme or travel objective. For education groups, include age range and curriculum theme. For NGO programmes, include field sites and equipment. For safari and coast, include preferred regions and pace."
+    answer: "We need dates, group size, arrival point, route ideas, and the programme or travel objective. For church groups, include the type of gathering and any specific needs. For chamas, include budget range and trip type. For corporate groups, include the business objective. For schools, include age range and curriculum theme. For NGO programmes, include field sites and equipment. For safari and coast, include preferred regions and pace."
   },
   {
     question: "How long does it take to receive a response?",
@@ -57,7 +57,10 @@ export default function Contact() {
           <h2>Give us enough ground to work from.</h2>
           <p>You do not need to have the full itinerary settled. Dates, group size, arrival point, route ideas and the programme or travel objective are enough to start testing the movement.</p>
           <div className="contact-details">
-            <p><strong>For education groups</strong>Include age range, curriculum or research theme, supervision model and any student accommodation or dietary requirements.</p>
+            <p><strong>For church &amp; religious groups</strong>Include the type of gathering (retreat, conference, mission trip, pilgrimage), dates, group size, rooming needs, dietary requirements, accessibility considerations and any specific programme requirements.</p>
+            <p><strong>For chamas &amp; investment groups</strong>Include budget range, group size, trip type (educational tour, strategic planning retreat, member appreciation, project site visit), preferred destinations and any specific member needs or approval processes.</p>
+            <p><strong>For corporate &amp; office groups</strong>Include the business objective (team building, celebration, strategy retreat, conference, incentive), dates, group size, budget range, meeting facility requirements, activity preferences and any policy compliance needs.</p>
+            <p><strong>For schools &amp; education groups</strong>Include age range, curriculum or research theme, supervision model and any student accommodation or dietary requirements.</p>
             <p><strong>For NGO programmes</strong>Include counties or field sites, team size, equipment, fixed dates, access concerns and the communication requirements for the movement.</p>
             <p><strong>For safari and coast travel</strong>Include arrival point, preferred regions, group composition, pace and how much time you want to spend moving between stops.</p>
           </div>
@@ -73,7 +76,7 @@ export default function Contact() {
                 <div className="form-field"><label htmlFor="name">Your name</label><input id="name" name="name" placeholder="Full name" required /></div>
                 <div className="form-field"><label htmlFor="organisation">Organisation</label><input id="organisation" name="organisation" placeholder="School, NGO or group" /></div>
                 <div className="form-field"><label htmlFor="email">Email address</label><input id="email" name="email" type="email" placeholder="name@organisation.org" required /></div>
-                <div className="form-field"><label htmlFor="travel-type">Trip type</label><select id="travel-type" name="travel-type" defaultValue=""><option value="" disabled>Select one</option><option value="education">Education &amp; study tour</option><option value="ngo">NGO field logistics</option><option value="safari">Safari &amp; coast travel</option><option value="other">A combination</option></select></div>
+                <div className="form-field"><label htmlFor="travel-type">Trip type</label><select id="travel-type" name="travel-type" defaultValue=""><option value="" disabled>Select one</option><option value="church">Church &amp; religious group</option><option value="chama">Chama &amp; investment group</option><option value="corporate">Corporate &amp; office</option><option value="schools">Schools &amp; education</option><option value="ngo">NGO field logistics</option><option value="safari">Safari &amp; coast travel</option><option value="other">A combination</option></select></div>
                 <div className="form-field"><label htmlFor="dates">Dates or date range</label><input id="dates" name="dates" placeholder="e.g. July 2027 / flexible" /></div>
                 <div className="form-field"><label htmlFor="group">Group size</label><input id="group" name="group" placeholder="Approximate number" /></div>
                 <div className="form-field form-field--full"><label htmlFor="route">Route and brief</label><textarea id="route" name="route" placeholder="Where are you starting, which places or field sites are involved, and what does the trip need to achieve?" required /></div>

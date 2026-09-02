@@ -7,8 +7,8 @@ import { imageUrls } from "@/lib/siteData";
 
 const meta = {
   title: "Naivasha & Nakuru Guide | Rift Valley | 67 Tours",
-  description: "Rift Valley destinations: freshwater ecology, geothermal energy, birdlife, and practical access for education and safari groups.",
-  keywords: "Naivasha, Nakuru, Rift Valley, freshwater ecology, birdlife, Lake Naivasha, Lake Nakuru, education tours"
+  description: "Rift Valley destinations: freshwater ecology, geothermal energy, birdlife, and practical access for church groups, chamas, corporate groups, education groups, NGOs, and safari travellers.",
+  keywords: "Naivasha, Nakuru, Rift Valley, freshwater ecology, birdlife, church retreats Naivasha, chama tours Naivasha, corporate team building Naivasha, education tours Naivasha, NGO logistics Naivasha"
 };
 
 export default function DestinationNaivashaNakuru() {
@@ -44,12 +44,40 @@ export default function DestinationNaivashaNakuru() {
             <div className="checklist__item">
               <strong>01</strong>
               <div>
+                <h3>For Church & Religious Groups</h3>
+                <p>Rift Valley retreat centres with meeting spaces and accommodation for groups. Environments suitable for reflection, fellowship, and spiritual gatherings. Manageable road access from Nairobi for large groups.</p>
+              </div>
+            </div>
+            <div className="checklist__item">
+              <strong>02</strong>
+              <div>
+                <h3>For Chamas & Investment Groups</h3>
+                <p>Naivasha's flower farms, geothermal projects, and agricultural enterprises for educational visits. Nakuru's manufacturing and processing industries. Venues for strategic planning retreats and member appreciation.</p>
+              </div>
+            </div>
+            <div className="checklist__item">
+              <strong>03</strong>
+              <div>
+                <h3>For Corporate & Office Groups</h3>
+                <p>Naivasha lodges and resorts with team-building facilities and meeting spaces. Nakuru venues for strategic planning retreats and leadership meetings. Environments that support focused work and networking.</p>
+              </div>
+            </div>
+            <div className="checklist__item">
+              <strong>04</strong>
+              <div>
                 <h3>For Education Groups</h3>
                 <p>Naivasha: Freshwater ecology, geothermal energy (Ol Karia), horticulture and flower farms, Hell's Gate National Park (walking safaris). Nakuru: Lake Nakuru National Park (flamingos, rhino sanctuary), Rift Valley geology, urban-rural interface.</p>
               </div>
             </div>
             <div className="checklist__item">
-              <strong>02</strong>
+              <strong>05</strong>
+              <div>
+                <h3>For NGO Programmes</h3>
+                <p>Rift Valley corridor for linking Nairobi with Nakuru, Naivasha, Baringo and onward programme locations. Community development programmes and field sites. Agricultural and environmental projects.</p>
+              </div>
+            </div>
+            <div className="checklist__item">
+              <strong>06</strong>
               <div>
                 <h3>For Safari Groups</h3>
                 <p>Lake Nakuru National Park: Rhino sanctuary, flamingo populations, diverse wildlife. Naivasha: Boat rides on Lake Naivasha, Crescent Island walking safaris, Hell's Gate wildlife viewing.</p>

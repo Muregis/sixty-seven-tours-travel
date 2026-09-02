@@ -8,7 +8,10 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { SiteShell } from "./components/SiteShell";
 import Home from "./pages/Home";
-import Education from "./pages/Education";
+import Church from "./pages/Church";
+import Chamas from "./pages/Chamas";
+import Corporate from "./pages/Corporate";
+import Schools from "./pages/Schools";
 import Ngo from "./pages/Ngo";
 import SafariCoast from "./pages/SafariCoast";
 import HowWeWork from "./pages/HowWeWork";
@@ -29,7 +32,10 @@ function Router() {
     <SiteShell>
       <Switch>
         <Route path="/" component={Home} />
-        <Route path="/education" component={Education} />
+        <Route path="/church-religious" component={Church} />
+        <Route path="/chamas" component={Chamas} />
+        <Route path="/corporate" component={Corporate} />
+        <Route path="/schools" component={Schools} />
         <Route path="/ngo" component={Ngo} />
         <Route path="/safari-coast" component={SafariCoast} />
         <Route path="/destinations" component={Destinations} />

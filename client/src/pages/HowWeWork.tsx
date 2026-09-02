@@ -11,7 +11,7 @@ const meta = {
 };
 
 const process = [
-  { number: "01", title: "Read the brief", text: "We start with purpose, dates, group composition, arrival point, route ideas and the conditions that cannot move. For education and NGO work, the programme objective is part of the brief." },
+  { number: "01", title: "Read the brief", text: "We start with purpose, dates, group composition, arrival point, route ideas and the conditions that cannot move. For church, chama, corporate, school, and NGO programmes, the objective is part of the brief." },
   { number: "02", title: "Test the route", text: "We look at sequence, transfer time, access, site timing, accommodation position, vehicle needs and where the plan needs margin. The first answer should make assumptions visible." },
   { number: "03", title: "Build the movement plan", text: "The itinerary is shaped around what the group needs to do each day. We keep the handovers, contact points and practical standards connected to the route." },
   { number: "04", title: "Confirm the working details", text: "Before movement, the important details are checked: arrivals, pickups, rooming, meal needs, site windows, contact responsibilities and the next point of the journey." },
@@ -26,8 +26,11 @@ const principles = [
 
 const expertise = [
   { title: "Route planning and sequencing", text: "Multi-site movements, remote access, timing windows, and realistic road legs across Kenya." },
-  { title: "Education programme coordination", text: "Curriculum alignment, field site selection, student standards, and local facilitation." },
-  { title: "NGO field logistics", text: "Equipment coordination, security-aware movement, multi-site handovers, and contingency planning." },
+  { title: "Church & religious group travel", text: "Retreats, conferences, mission trips, and pilgrimages planned around spiritual objectives, group composition, and pastoral responsibilities." },
+  { title: "Chama & investment group travel", text: "Transparent costing, member-benefit planning, strategic retreats, and educational tours that respect group finances and approval processes." },
+  { title: "Corporate & office travel", text: "Team building, end-of-year celebrations, incentive travel, conference travel, and strategy retreats aligned to business purpose and professional standards." },
+  { title: "Schools & education programmes", text: "Curriculum alignment, field site selection, student standards, supervision planning, and local facilitation." },
+  { title: "NGO field logistics", text: "Equipment coordination, security-aware movement, multi-site handovers, and contingency planning for remote access." },
   { title: "Safari and coast travel", text: "Wildlife route timing, park access, coastal transfers, and leisure group management." }
 ];
 
