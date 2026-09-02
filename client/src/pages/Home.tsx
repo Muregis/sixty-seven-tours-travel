@@ -8,7 +8,8 @@ import { RouteTick, SectionIntro } from "@/components/SiteShell";
 const capabilities = [
   { number: "01", title: "Education & study tours", text: "Curriculum-led programmes with the group movement, student standards, local facilitation and learning context planned together.", href: "/education" },
   { number: "02", title: "NGO field logistics", text: "Multi-site movements, remote access, realistic route plans and the communication rhythm programme teams need.", href: "/ngo" },
-  { number: "03", title: "Safari & coast", text: "Safari and coastal travel built around timing, transfers, accommodation choices and the requirements of the group.", href: "/safari-coast" },
+  { number: "03", title: "Safari travel", text: "Wildlife routes shaped around transfer time, park rhythm, accommodation choices and the pace of the group.", href: "/safari-coast" },
+  { number: "04", title: "Coast travel", text: "Indian Ocean stays, marine activities and coastal movement planned around heat, tides, road legs and arrival windows.", href: "/safari-coast" },
 ];
 
 export default function Home() {
@@ -17,45 +18,51 @@ export default function Home() {
       <section className="home-hero">
         <div className="home-hero__copy">
           <RouteTick label="Kenya / on the ground" number="67" />
-          <h1>The Kenya side of the trip, <em>planned properly.</em></h1>
-          <p className="home-hero__lead">67 Tours &amp; Travel coordinates education groups, NGO field programmes and leisure travel across Kenya. We work from the route, the brief and the practical realities of moving people between sites.</p>
+          <h1>One Kenya plan. <em>Every handover accounted for.</em></h1>
+          <p className="home-hero__lead">67 Tours &amp; Travel coordinates education groups, NGO field teams, safari routes and coast travel across Kenya—linking vehicles, stays, field sites and the people responsible for the day.</p>
           <Link href="/contact" className="hero-cta">Request a route-specific quote <ArrowUpRight size={17} strokeWidth={1.8} /></Link>
-          <div className="hero-note"><span className="hero-note__dot" /><span>For coordinators who need a useful answer before they commit to the itinerary.</span></div>
+          <div className="hero-note"><span className="hero-note__dot" /><span>For organisers who need the route to work for the people, the programme and the day.</span></div>
+          <div className="hero-service-board" aria-label="What we coordinate">
+            <Link href="/education"><strong>Education</strong><span>Study tours</span></Link>
+            <Link href="/ngo"><strong>NGO</strong><span>Field logistics</span></Link>
+            <Link href="/safari-coast"><strong>Safari</strong><span>Wildlife routes</span></Link>
+            <Link href="/safari-coast"><strong>Coast</strong><span>Indian Ocean</span></Link>
+          </div>
         </div>
         <div className="home-hero__visual">
           <img src={imageUrls.hero} alt="Students and a field facilitator observing wildlife in Amboseli" />
           <span className="hero-index">FIELD NOTE / 01</span>
           <div className="route-card">
-            <div className="route-card__top"><span>Current route</span><MapPin size={15} /></div>
-            <strong>Nairobi → Amboseli</strong>
-            <p>Learning context, transfer time, group rhythm and the details between the stops.</p>
+            <div className="route-card__top"><span>Route board / Kenya</span><MapPin size={15} /></div>
+            <strong>People in motion.</strong>
+            <p>Groups, field teams, safari vehicles and coast handovers—planned as one connected movement.</p>
           </div>
         </div>
       </section>
 
       <section className="stat-band" aria-label="Operating focus">
         <div className="stat-band__inner">
-          <div className="stat-band__intro"><RouteTick label="What we coordinate" /><p>The work behind a trip that runs to the brief.</p></div>
-          <div className="stat"><strong>01</strong><span>One operating brief from first route to final movement</span></div>
-          <div className="stat"><strong>02</strong><span>Education and NGO work comes before leisure travel</span></div>
-          <div className="stat"><strong>∞</strong><span>Details carried through the itinerary, not left to chance</span></div>
+          <div className="stat-band__intro"><RouteTick label="What we coordinate" /><p>Four ways people arrive in the Kenya-side brief.</p></div>
+          <div className="stat"><strong>EDU</strong><span>Study tours built around the learning objective</span></div>
+          <div className="stat"><strong>NGO</strong><span>Field logistics across sites and counties</span></div>
+          <div className="stat"><strong>TRAVEL</strong><span>Safari, coast and group movements that connect</span></div>
         </div>
       </section>
 
       <section className="intro-section container">
         <div><RouteTick label="The decision" number="01" /></div>
         <div className="intro-section__copy">
-          <h2>Can these people actually handle our group?</h2>
-          <p>That is the right question. A Kenya itinerary is not only a list of places. It is vehicles arriving when expected, accommodation that works for the group, local contacts who know the day’s plan, and a response when the route changes.</p>
-          <p>Our job is to make those operating decisions visible early enough to plan around them.</p>
+          <h2>Can this team handle the whole movement?</h2>
+          <p>That is the right question. A Kenya itinerary is not only a list of places. It is vehicles arriving when expected, accommodation that works for the group, field contacts who know the day’s plan, and a response when the route changes.</p>
+          <p>Our job is to make those operating decisions visible early enough to plan around them—whether the brief is academic, humanitarian, safari-led or coastal.</p>
           <Link href="/how-we-work" className="text-link">See how we work <ArrowUpRight size={15} /></Link>
         </div>
       </section>
 
       <section className="capabilities container">
         <div className="capabilities__header">
-          <RouteTick label="Core capability" number="02" />
-          <p>Three ways groups arrive in our brief. The same discipline carries through each one: clear routing, practical standards and local follow-through.</p>
+          <RouteTick label="What we handle" number="02" />
+          <p>Four service lines, one operating discipline: clear routing, practical standards and local follow-through across Kenya.</p>
         </div>
         <div className="capabilities__list">
           {capabilities.map((capability) => (

@@ -455,3 +455,29 @@ button { border: 0; }
 @media (max-width: 620px) {
   .page-header__stamp { position: relative; left: auto; bottom: auto; margin: -20px 8vw 24px; }
 }
+
+/* Revised homepage: four-category service board keeps the full company offer visible in the first screen. */
+.hero-service-board { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); max-width: 510px; margin-top: 28px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.hero-service-board a { display: grid; gap: 4px; padding: 12px 9px 12px 0; border-right: 1px solid var(--line); transition: color 160ms ease-out, padding-left 180ms var(--ease-out); }
+.hero-service-board a + a { padding-left: 10px; }
+.hero-service-board a:last-child { border-right: 0; }
+.hero-service-board a:hover { color: var(--orange-dark); padding-left: 5px; }
+.hero-service-board strong { font: 600 15px/1 "Fraunces", serif; letter-spacing: -0.02em; }
+.hero-service-board span { color: #718077; font-size: 8px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+.stat strong { font-size: 24px; letter-spacing: 0.02em; }
+@media (max-width: 620px) {
+  .hero-service-board { max-width: 100%; }
+  .hero-service-board strong { font-size: 13px; }
+  .hero-service-board span { font-size: 7px; letter-spacing: 0.04em; }
+  .hero-service-board a { padding-right: 5px; }
+  .hero-service-board a + a { padding-left: 6px; }
+}
+
+/* Hero hierarchy refinement: show the full operating offer and primary action before the first scroll. */
+@media (min-width: 901px) {
+  .home-hero__copy { padding-top: 62px; padding-bottom: 38px; }
+  .home-hero h1 { max-width: 630px; margin-top: 20px; margin-bottom: 17px; font-size: clamp(3.5rem, 5.55vw, 6.3rem); }
+  .home-hero__lead { max-width: 470px; margin-bottom: 20px; font-size: 14px; line-height: 1.6; }
+  .hero-note { margin-top: 27px; }
+  .hero-service-board { margin-top: 20px; }
+}
