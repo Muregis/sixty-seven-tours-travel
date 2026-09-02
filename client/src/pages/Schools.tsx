@@ -2,13 +2,24 @@
 
 import { ArrowUpRight, Check } from "lucide-react";
 import { Link } from "wouter";
+import { SEO } from "@/components/SEO";
 import { PageHeader, RouteTick, SectionIntro } from "@/components/SiteShell";
 import { destinations, imageUrls } from "@/lib/siteData";
 
-const meta = {
-  title: "Kenya Study Tours for Schools | 67 Tours",
-  description: "Curriculum-led Kenya study tours for schools and education groups: group movement, student standards, local facilitation and practical field planning.",
-  keywords: "Kenya education tours, study tours, field trips, curriculum-aligned travel, student travel, academic programmes, school trips Kenya"
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Schools & Education Group Travel",
+  "description": "Curriculum-led Kenya study tours for schools and education groups: group movement, student standards, local facilitation and practical field planning.",
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "67 Tours & Travel",
+    "url": "https://67tours.co.ke"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Kenya"
+  }
 };
 
 const checklist = [
@@ -50,6 +61,12 @@ const faqs = [
 export default function Schools() {
   return (
     <>
+      <SEO
+        title="Kenya Study Tours for Schools | 67 Tours"
+        description="Curriculum-led Kenya study tours for schools and education groups: group movement, student standards, local facilitation and practical field planning."
+        canonical="https://67tours.co.ke/schools"
+        structuredData={structuredData}
+      />
       <PageHeader eyebrow="Capability / 04" title="Education trips that hold up outside the classroom." intro="You are responsible for the learning objective, the students and the timetable. We help make the Kenya side of that responsibility specific: which sites fit, how the group moves, what the accommodation needs to do and who is present when the plan meets the ground." image={imageUrls.education} imageAlt="Students taking notes during a supervised marine field lesson near Watamu" />
 
       <section className="page-intro container">

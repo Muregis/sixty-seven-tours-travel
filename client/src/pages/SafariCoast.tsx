@@ -2,13 +2,24 @@
 
 import { ArrowUpRight, Clock3, Luggage, Sun } from "lucide-react";
 import { Link } from "wouter";
+import { SEO } from "@/components/SEO";
 import { PageHeader, RouteTick } from "@/components/SiteShell";
 import { imageUrls } from "@/lib/siteData";
 
-const meta = {
-  title: "Kenya Safari & Coast Itineraries | 67 Tours",
-  description: "Operationally clear Kenya safari and coast itineraries, built around timing, transfers, stays and group needs. Mara, Amboseli, Watamu.",
-  keywords: "Kenya safari, coast travel, wildlife routes, Indian Ocean, beach holidays, safari planning, coastal transfers"
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Safari & Coast Travel",
+  "description": "Operationally clear Kenya safari and coast itineraries, built around timing, transfers, stays and group needs. Mara, Amboseli, Watamu.",
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "67 Tours & Travel",
+    "url": "https://67tours.co.ke"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Kenya"
+  }
 };
 
 const itineraries = [
@@ -55,6 +66,12 @@ const faqs = [
 export default function SafariCoast() {
   return (
     <>
+      <SEO
+        title="Kenya Safari & Coast Itineraries | 67 Tours"
+        description="Operationally clear Kenya safari and coast itineraries, built around timing, transfers, stays and group needs. Mara, Amboseli, Watamu."
+        canonical="https://67tours.co.ke/safari-coast"
+        structuredData={structuredData}
+      />
       <PageHeader eyebrow="Capability / 03" title="Safari and coast, planned around the handovers." intro="A leisure trip still has a movement plan. We build safari and coast travel around the links between places: arrival windows, road legs, stays, luggage, activity timing and the group's pace." image={imageUrls.safari} imageAlt="Safari vehicle following a track through the Maasai Mara" />
 
       <section className="page-intro container">

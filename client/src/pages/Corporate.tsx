@@ -2,13 +2,24 @@
 
 import { ArrowUpRight, Check, Building2 } from "lucide-react";
 import { Link } from "wouter";
+import { SEO } from "@/components/SEO";
 import { PageHeader, RouteTick } from "@/components/SiteShell";
 import { imageUrls } from "@/lib/siteData";
 
-const meta = {
-  title: "Corporate Team Building Kenya | 67 Tours",
-  description: "Corporate group travel in Kenya: team building, end-of-year celebrations, incentive travel, conference trips and strategy retreats aligned to business purpose.",
-  keywords: "Kenya corporate travel, team building Kenya, office retreats, incentive travel, corporate conferences, end-of-year trips, business travel Kenya"
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Corporate & Office Group Travel",
+  "description": "Corporate group travel in Kenya: team building, end-of-year celebrations, incentive travel, conference trips and strategy retreats aligned to business purpose.",
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "67 Tours & Travel",
+    "url": "https://67tours.co.ke"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Kenya"
+  }
 };
 
 const checklist = [
@@ -58,6 +69,12 @@ const faqs = [
 export default function Corporate() {
   return (
     <>
+      <SEO
+        title="Corporate Team Building Kenya | 67 Tours"
+        description="Corporate group travel in Kenya: team building, end-of-year celebrations, incentive travel, conference trips and strategy retreats aligned to business purpose."
+        canonical="https://67tours.co.ke/corporate"
+        structuredData={structuredData}
+      />
       <PageHeader eyebrow="Capability / 03" title="Corporate and office travel that supports the business objective." intro="You are organising team building, end-of-year celebration, incentive travel, conference attendance, or a company retreat. The travel plan needs to deliver on the business purpose, stay within budget, and reflect well on the organisation. This is not personal leisure travel—it is business travel that must be professional, reliable, and purpose-driven." image={imageUrls.corporate} imageAlt="Corporate team at a team-building session in Naivasha" />
 
       <section className="page-intro container">

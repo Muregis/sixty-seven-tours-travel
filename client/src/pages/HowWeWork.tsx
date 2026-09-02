@@ -2,12 +2,20 @@
 
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "wouter";
+import { SEO } from "@/components/SEO";
 import { PageHeader, RouteTick } from "@/components/SiteShell";
 
-const meta = {
-  title: "How We Work | 67 Tours & Travel Kenya",
-  description: "See how 67 Tours & Travel plans and coordinates trips from the Kenya side, from brief to final movement. Team roles and operating standards.",
-  keywords: "destination management Kenya, how we work, route planning, local coordination, travel operations"
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "How We Work",
+  "description": "See how 67 Tours & Travel plans and coordinates trips from the Kenya side, from brief to final movement. Team roles and operating standards.",
+  "url": "https://67tours.co.ke/how-we-work",
+  "publisher": {
+    "@type": "TravelAgency",
+    "name": "67 Tours & Travel",
+    "url": "https://67tours.co.ke"
+  }
 };
 
 const process = [
@@ -37,6 +45,12 @@ const expertise = [
 export default function HowWeWork() {
   return (
     <>
+      <SEO
+        title="How We Work | 67 Tours & Travel Kenya"
+        description="See how 67 Tours & Travel plans and coordinates trips from the Kenya side, from brief to final movement. Team roles and operating standards."
+        canonical="https://67tours.co.ke/how-we-work"
+        structuredData={structuredData}
+      />
       <PageHeader eyebrow="The company / how we work" title="A practical way to plan Kenya from the Kenya side." intro="67 Tours & Travel is a Kenya-based destination management company. We focus on the decisions between the headline destinations: access, sequence, timing, people, standards and the plan when the day does not follow the first version." />
 
       <section className="process-section container">

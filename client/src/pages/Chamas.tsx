@@ -2,13 +2,24 @@
 
 import { ArrowUpRight, Check, Users } from "lucide-react";
 import { Link } from "wouter";
+import { SEO } from "@/components/SEO";
 import { PageHeader, RouteTick } from "@/components/SiteShell";
 import { imageUrls } from "@/lib/siteData";
 
-const meta = {
-  title: "Chama & Investment Group Travel Kenya | 67 Tours",
-  description: "Transparent, accountable chama travel for Kenyan investment groups: strategic planning retreats, educational tours, member appreciation and project site visits.",
-  keywords: "Kenya chama travel, investment group travel, savings cooperative trips, chama retreats, member benefit travel, group budgeting"
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Chama & Investment Group Travel",
+  "description": "Transparent, accountable chama travel for Kenyan investment groups: strategic planning retreats, educational tours, member appreciation and project site visits.",
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "67 Tours & Travel",
+    "url": "https://67tours.co.ke"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Kenya"
+  }
 };
 
 const checklist = [
@@ -58,6 +69,12 @@ const faqs = [
 export default function Chamas() {
   return (
     <>
+      <SEO
+        title="Chama & Investment Group Travel Kenya | 67 Tours"
+        description="Transparent, accountable chama travel for Kenyan investment groups: strategic planning retreats, educational tours, member appreciation and project site visits."
+        canonical="https://67tours.co.ke/chamas"
+        structuredData={structuredData}
+      />
       <PageHeader eyebrow="Capability / 02" title="Chama and investment group travel that respects the members' contribution." intro="You are organising travel for a chama, investment group, or savings collective. The trip needs to deliver value, stay within budget, and honour the trust members have placed in the leadership. This is not leisure travel—it is member-benefit travel that must be planned with the same discipline you apply to your group's finances." image={imageUrls.chama} imageAlt="Chama members reviewing travel plans at a meeting" />
 
       <section className="page-intro container">

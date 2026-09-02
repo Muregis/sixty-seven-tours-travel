@@ -2,13 +2,24 @@
 
 import { ArrowUpRight, Radio, Route as RouteIcon, ShieldCheck } from "lucide-react";
 import { Link } from "wouter";
+import { SEO } from "@/components/SEO";
 import { PageHeader, RouteTick } from "@/components/SiteShell";
 import { destinations, imageUrls } from "@/lib/siteData";
 
-const meta = {
-  title: "NGO Field Logistics Kenya | 67 Tours",
-  description: "Multi-site field logistics across Kenya for NGO programmes: remote access, routing, vehicle planning and communication for field teams.",
-  keywords: "NGO logistics Kenya, field coordination, humanitarian travel, development programmes, remote access, multi-site movement, field logistics"
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "NGO Field Logistics",
+  "description": "Multi-site field logistics across Kenya for NGO programmes: remote access, routing, vehicle planning and communication for field teams.",
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "67 Tours & Travel",
+    "url": "https://67tours.co.ke"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Kenya"
+  }
 };
 
 const operatingRows = [
@@ -47,6 +58,12 @@ const faqs = [
 export default function Ngo() {
   return (
     <>
+      <SEO
+        title="NGO Field Logistics Kenya | 67 Tours"
+        description="Multi-site field logistics across Kenya for NGO programmes: remote access, routing, vehicle planning and communication for field teams."
+        canonical="https://67tours.co.ke/ngo"
+        structuredData={structuredData}
+      />
       <PageHeader eyebrow="Capability / 05" title="Field logistics that respect the programme." intro="When a team is working across counties, the travel plan is part of programme delivery. We coordinate the Kenya-side movement so staff, equipment, site schedules and reporting commitments can stay aligned." image={imageUrls.ngo} imageAlt="Field staff reviewing a route beside a 4x4 in northern Kenya" />
 
       <section className="page-intro container">

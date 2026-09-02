@@ -2,13 +2,24 @@
 
 import { ArrowUpRight, Check } from "lucide-react";
 import { Link } from "wouter";
+import { SEO } from "@/components/SEO";
 import { PageHeader, RouteTick } from "@/components/SiteShell";
 import { imageUrls } from "@/lib/siteData";
 
-const meta = {
-  title: "Church Retreats & Mission Trips Kenya | 67 Tours",
-  description: "Kenya church group travel: retreats, conferences, pilgrimages and mission trips planned around the spiritual and practical needs of congregations and ministry teams.",
-  keywords: "Kenya church retreats, mission trips, pilgrimages, church conferences, religious group travel, ministry travel Kenya"
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Church & Religious Group Travel",
+  "description": "Kenya church group travel: retreats, conferences, pilgrimages and mission trips planned around the spiritual and practical needs of congregations and ministry teams.",
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "67 Tours & Travel",
+    "url": "https://67tours.co.ke"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Kenya"
+  }
 };
 
 const checklist = [
@@ -58,6 +69,12 @@ const faqs = [
 export default function Church() {
   return (
     <>
+      <SEO 
+        title="Church Retreats & Mission Trips Kenya | 67 Tours"
+        description="Kenya church group travel: retreats, conferences, pilgrimages and mission trips planned around the spiritual and practical needs of congregations and ministry teams."
+        canonical="https://67tours.co.ke/church-religious"
+        structuredData={structuredData}
+      />
       <PageHeader eyebrow="Capability / 01" title="Church and religious group travel that respects the purpose." intro="You are organising a retreat, conference, mission trip, or pilgrimage. The travel plan needs to support the spiritual objective, the group's practical needs, and the responsibility you carry for people who are not just tourists—they are your congregation, members, or community." image={imageUrls.church} imageAlt="Church group gathered at a retreat centre with Mount Kenya in the background" />
 
       <section className="page-intro container">

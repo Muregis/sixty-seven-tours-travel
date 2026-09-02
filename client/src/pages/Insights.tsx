@@ -1,13 +1,21 @@
 // Design note: Field Notes Modernism — Insights is a structured content hub for field notes, route observations, and practical travel writing.
 
 import { useState } from "react";
-import { RouteTick, SectionIntro } from "@/components/SiteShell";
+import { RouteTick, SectionIntro, PageHeader } from "@/components/SiteShell";
 import { ArrowUpRight } from "lucide-react";
+import { SEO } from "@/components/SEO";
 
-const meta = {
-  title: "Kenya Operations Insights | 67 Tours & Travel",
-  description: "Practical articles on Kenya church group travel, chama travel, corporate travel, school study tours, NGO field logistics, safari planning, and seasonal considerations for programme coordinators.",
-  keywords: "Kenya travel insights, field notes, route observations, travel writing, Kenya destinations, church retreats, chama travel, corporate team building, education programmes, NGO logistics"
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Kenya Operations Insights",
+  "description": "Practical articles on Kenya church group travel, chama travel, corporate travel, school study tours, NGO field logistics, safari planning, and seasonal considerations for programme coordinators.",
+  "url": "https://67tours.co.ke/insights",
+  "publisher": {
+    "@type": "TravelAgency",
+    "name": "67 Tours & Travel",
+    "url": "https://67tours.co.ke"
+  }
 };
 
 import { Link } from "wouter";
@@ -260,10 +268,16 @@ export default function Insights() {
   if (selectedArticle) {
     return (
       <>
-        <PageHeader 
-          eyebrow="INSIGHTS / ARTICLE" 
-          title={selectedArticle.title} 
-          intro={selectedArticle.brief} 
+        <SEO
+          title={`${selectedArticle.title} | 67 Tours`}
+          description={selectedArticle.brief}
+          canonical="https://67tours.co.ke/insights"
+          structuredData={structuredData}
+        />
+        <PageHeader
+          eyebrow="INSIGHTS / ARTICLE"
+          title={selectedArticle.title}
+          intro={selectedArticle.brief}
         />
         <section className="article-content container">
           <button className="text-link" onClick={() => setSelectedArticle(null)}>
@@ -299,10 +313,16 @@ export default function Insights() {
 
   return (
     <>
-      <PageHeader 
-        eyebrow="INSIGHTS / KENYA OPERATIONS" 
-        title="Practical information for programme coordinators and group planners." 
-        intro="These articles address the questions that come up when planning Kenya-side movement for church groups, chamas, corporate offices, schools, NGOs, and safari travellers: seasonal considerations, logistics, preparation, and the operational realities of field work and study tours." 
+      <SEO
+        title="Kenya Operations Insights | 67 Tours & Travel"
+        description="Practical articles on Kenya church group travel, chama travel, corporate travel, school study tours, NGO field logistics, safari planning, and seasonal considerations for programme coordinators."
+        canonical="https://67tours.co.ke/insights"
+        structuredData={structuredData}
+      />
+      <PageHeader
+        eyebrow="INSIGHTS / KENYA OPERATIONS"
+        title="Practical information for programme coordinators and group planners."
+        intro="These articles address the questions that come up when planning Kenya-side movement for church groups, chamas, corporate offices, schools, NGOs, and safari travellers: seasonal considerations, logistics, preparation, and the operational realities of field work and study tours."
       />
 
       <section className="page-intro container">

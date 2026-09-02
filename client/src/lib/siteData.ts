@@ -1,14 +1,14 @@
 // Design note: Field Notes Modernism — editorial hierarchy, operational clarity, limestone paper, ink green, and waypoint orange.
 
 export const imageUrls = {
-  hero: "/manus-storage/67-hero-amboseli_c2fc69d9.jpg",
-  church: "/manus-storage/67-church-retreat_b8e4a21d.jpg",
-  chama: "/manus-storage/67-chama-meeting_c3d9e72f.jpg",
-  corporate: "/manus-storage/67-corporate-teambuilding_a5b8c41e.jpg",
-  education: "/manus-storage/67-education-watamu_a3b7ea47.jpg",
-  ngo: "/manus-storage/67-ngo-turkana_1bca88c7.jpg",
-  safari: "/manus-storage/67-safari-coast_71431b0a.jpg",
-  mark: "/manus-storage/67-mark_35827bf0.png",
+  hero: "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1200&h=600&fit=crop",
+  church: "https://images.unsplash.com/photo-1548625361-ec8a9c47267a?w=800&h=600&fit=crop",
+  chama: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800&h=600&fit=crop",
+  corporate: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop",
+  education: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=600&fit=crop",
+  ngo: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&h=600&fit=crop",
+  safari: "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&h=600&fit=crop",
+  mark: "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=64&h=64&fit=crop",
 };
 
 export const navItems = [

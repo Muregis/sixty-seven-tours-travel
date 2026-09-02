@@ -2,13 +2,21 @@
 
 import { ArrowUpRight, MapPin } from "lucide-react";
 import { Link } from "wouter";
-import { RouteTick, SectionIntro } from "@/components/SiteShell";
+import { SEO } from "@/components/SEO";
+import { PageHeader, RouteTick, SectionIntro } from "@/components/SiteShell";
 import { destinations, imageUrls } from "@/lib/siteData";
 
-const meta = {
-  title: "Kenya Destinations | 67 Tours & Travel",
-  description: "Destination guides for Nairobi, Maasai Mara, Amboseli, Coast, Rift Valley and Northern Kenya. Access, seasons, and programme relevance.",
-  keywords: "Kenya destinations, Nairobi, Maasai Mara, Amboseli, Rift Valley, Northern Kenya, Kakamega, Coast, Watamu, travel routes"
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Kenya Destinations",
+  "description": "Destination guides for Nairobi, Maasai Mara, Amboseli, Coast, Rift Valley and Northern Kenya. Access, seasons, and programme relevance.",
+  "url": "https://67tours.co.ke/destinations",
+  "publisher": {
+    "@type": "TravelAgency",
+    "name": "67 Tours & Travel",
+    "url": "https://67tours.co.ke"
+  }
 };
 
 const programmeDestinations = {
@@ -68,10 +76,16 @@ const seasonalNotes = [
 export default function Destinations() {
   return (
     <>
-      <PageHeader 
-        eyebrow="DESTINATIONS / KENYA" 
-        title="The places where programmes and routes become real." 
-        intro="These are the regions and sites we work with regularly for church groups, chamas, corporate offices, schools, NGOs, safari routes and coastal stays. Each has access considerations, seasonal factors, and programme relevance that shape how we plan movement." 
+      <SEO
+        title="Kenya Destinations | 67 Tours & Travel"
+        description="Destination guides for Nairobi, Maasai Mara, Amboseli, Coast, Rift Valley and Northern Kenya. Access, seasons, and programme relevance."
+        canonical="https://67tours.co.ke/destinations"
+        structuredData={structuredData}
+      />
+      <PageHeader
+        eyebrow="DESTINATIONS / KENYA"
+        title="The places where programmes and routes become real."
+        intro="These are the regions and sites we work with regularly for church groups, chamas, corporate offices, schools, NGOs, safari routes and coastal stays. Each has access considerations, seasonal factors, and programme relevance that shape how we plan movement."
       />
 
       <section className="page-intro container">

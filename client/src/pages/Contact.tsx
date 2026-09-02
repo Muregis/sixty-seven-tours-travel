@@ -2,12 +2,20 @@
 
 import { useState, type FormEvent } from "react";
 import { ArrowUpRight, Check } from "lucide-react";
+import { SEO } from "@/components/SEO";
 import { RouteTick } from "@/components/SiteShell";
 
-const meta = {
-  title: "Request a Kenya Travel Quote | 67 Tours",
-  description: "Share your dates, group, route and programme needs so 67 Tours & Travel can prepare an accurate Kenya quote for church groups, chamas, corporate offices, schools, NGOs, safari and coast travel.",
-  keywords: "contact Kenya travel, request quote, travel enquiry, Kenya destination management, route planning quote"
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Request a Kenya Travel Quote",
+  "description": "Share your dates, group, route and programme needs so 67 Tours & Travel can prepare an accurate Kenya quote for church groups, chamas, corporate offices, schools, NGOs, safari and coast travel.",
+  "url": "https://67tours.co.ke/contact",
+  "publisher": {
+    "@type": "TravelAgency",
+    "name": "67 Tours & Travel",
+    "url": "https://67tours.co.ke"
+  }
 };
 
 const faqs = [
@@ -43,6 +51,12 @@ export default function Contact() {
 
   return (
     <>
+      <SEO
+        title="Request a Kenya Travel Quote | 67 Tours"
+        description="Share your dates, group, route and programme needs so 67 Tours & Travel can prepare an accurate Kenya quote for church groups, chamas, corporate offices, schools, NGOs, safari and coast travel."
+        canonical="https://67tours.co.ke/contact"
+        structuredData={structuredData}
+      />
       <section className="page-header">
         <div className="page-header__copy">
           <RouteTick label="Contact / request a quote" number="01" />

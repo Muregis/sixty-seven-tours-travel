@@ -2,13 +2,27 @@
 
 import { ArrowUpRight, Check, MapPin } from "lucide-react";
 import { Link } from "wouter";
+import { SEO } from "@/components/SEO";
 import { imageUrls, destinations } from "@/lib/siteData";
 import { RouteTick, SectionIntro } from "@/components/SiteShell";
 
-const meta = {
-  title: "67 Tours & Travel | Kenya on the Ground",
-  description: "Kenya-based destination management for church groups, chamas, corporate offices, schools, NGOs, safari and coast travel. Clear routing, practical standards, local coordination.",
-  keywords: "Kenya travel, destination management, church retreats, chama travel, corporate team building, school study tours, NGO logistics, safari, coast travel"
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "name": "67 Tours & Travel",
+  "description": "Kenya-based destination management for church groups, chamas, corporate offices, schools, NGOs, safari and coast travel.",
+  "url": "https://67tours.co.ke",
+  "logo": "https://67tours.co.ke/favicon.svg",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "KE",
+    "addressRegion": "Nairobi"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Kenya"
+  },
+  "priceRange": "$$"
 };
 
 const capabilities = [
@@ -22,6 +36,12 @@ const capabilities = [
 export default function Home() {
   return (
     <>
+      <SEO 
+        title="67 Tours & Travel | Kenya on the Ground"
+        description="Kenya-based destination management for church groups, chamas, corporate offices, schools, NGOs, safari and coast travel. Clear routing, practical standards, local coordination."
+        canonical="https://67tours.co.ke"
+        structuredData={structuredData}
+      />
       <section className="home-hero">
         <div className="home-hero__copy">
           <RouteTick label="Kenya / on the ground" number="67" />
