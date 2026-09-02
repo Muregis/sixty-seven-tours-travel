@@ -1,6 +1,6 @@
 // Design note: Field Notes Modernism — church travel is pastoral and practical; the route must serve the spiritual objective, the group's needs, and the responsibility of the organisers.
 
-import { ArrowUpRight, Check, Church } from "lucide-react";
+import { ArrowUpRight, Check } from "lucide-react";
 import { Link } from "wouter";
 import { PageHeader, RouteTick } from "@/components/SiteShell";
 import { imageUrls } from "@/lib/siteData";

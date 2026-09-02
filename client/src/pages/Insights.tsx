@@ -11,7 +11,7 @@ const meta = {
 };
 
 import { Link } from "wouter";
-import { PageHeader, RouteTick } from "@/components/SiteShell";
+import { PageHeader } from "@/components/SiteShell";
 
 const articleCategories = [
   {
