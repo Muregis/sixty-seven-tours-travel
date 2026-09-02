@@ -5,10 +5,43 @@ import { Link } from "wouter";
 import { PageHeader, RouteTick } from "@/components/SiteShell";
 import { destinations, imageUrls } from "@/lib/siteData";
 
+const meta = {
+  title: "NGO Field Logistics in Kenya | 67 Tours",
+  description: "Multi-site field logistics in Kenya for NGO programmes, including remote access, routing, permits and communication across counties.",
+  keywords: "NGO logistics Kenya, field coordination, humanitarian travel, development programmes, remote access, multi-site movement"
+};
+
 const operatingRows = [
   { icon: RouteIcon, title: "Multi-site sequencing", text: "We translate the programme calendar into a movement plan: arrival points, site order, realistic road legs, overnight positions and the people responsible for each handover." },
   { icon: ShieldCheck, title: "Remote access planning", text: "Northern Kenya, Turkana and other remote routes need more than a distance estimate. Fuel, road condition, heat, rest, vehicle suitability and fallback options belong in the first plan." },
   { icon: Radio, title: "Communication rhythm", text: "A programme team should know who is moving, when the next update is due and what happens if the route changes. We keep the operating information clear and usable." },
+];
+
+const faqs = [
+  {
+    question: "What types of NGO programmes do you support?",
+    answer: "We support development programmes, humanitarian response, research projects, and monitoring and evaluation activities across Kenya. We work with both international NGOs and local organisations."
+  },
+  {
+    question: "How do you handle equipment and logistics?",
+    answer: "We collect equipment specifications, weight, and volume during planning. We advise on vehicle suitability, loading plans, and secure storage. We coordinate equipment handovers between sites and team members."
+  },
+  {
+    question: "Can you work with security protocols?",
+    answer: "We work within the security protocols provided by the organisation. We do not set security policy—we coordinate movement in line with the organisation's requirements and local conditions."
+  },
+  {
+    question: "What happens if a site becomes inaccessible?",
+    answer: "We have contingency plans for common access issues. Alternative routes, timing adjustments, and alternative sites are planned before departure. We communicate changes to the programme team immediately."
+  },
+  {
+    question: "How do you handle multi-site programmes?",
+    answer: "We sequence movements according to the programme calendar. We coordinate handovers between sites, manage overnight positions, and ensure the right people and equipment are at each location when needed."
+  },
+  {
+    question: "Can you support cross-border programmes?",
+    answer: "We can coordinate Kenya-side movement for cross-border programmes. We work with the organisation's cross-border team to ensure seamless handovers at border points and within Kenya."
+  }
 ];
 
 export default function Ngo() {
@@ -53,8 +86,27 @@ export default function Ngo() {
         <div className="photo-break__image"><img src={imageUrls.ngo} alt="Field team pausing beside a vehicle on a northern Kenya route" /></div>
       </section>
 
+      <section className="route-section container">
+        <div className="route-section__header"><RouteTick label="Frequently asked questions" number="05" /><div><h2>Questions programme coordinators ask.</h2><p>Practical answers about equipment, security protocols, multi-site coordination, and contingency planning.</p></div></div>
+        <div className="faq-list">
+          {faqs.map((faq, index) => (
+            <div className="faq-item" key={index}>
+              <h3>{faq.question}</h3>
+              <p>{faq.answer}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="case-study-placeholder container">
+        <div className="route-section__header"><RouteTick label="Programme examples" /><div><h2>How NGO programmes move through Kenya.</h2><p>The following section is reserved for anonymised case studies of actual NGO field programmes we have coordinated. Each will include the programme objective, route structure, team size, and the operational decisions that made the field work possible.</p></div></div>
+        <div className="trust-placeholder">
+          <p><em>[Case study cards to be added as programmes are completed and documented]</em></p>
+        </div>
+      </section>
+
       <section className="cta-strip container">
-        <RouteTick label="Next step" number="05" />
+        <RouteTick label="Next step" number="06" />
         <div className="cta-strip__action"><div><h2>Send the programme calendar and the hard-to-reach sites.</h2><p>We can start with the dates, counties, team size, equipment and any fixed site commitments.</p></div><Link href="/contact" className="hero-cta">Request a field quote <ArrowUpRight size={17} /></Link></div>
       </section>
     </>

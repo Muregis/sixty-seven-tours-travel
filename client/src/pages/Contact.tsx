@@ -4,6 +4,35 @@ import { useState, type FormEvent } from "react";
 import { ArrowUpRight, Check } from "lucide-react";
 import { RouteTick } from "@/components/SiteShell";
 
+const meta = {
+  title: "Request a Kenya Travel Quote | 67 Tours",
+  description: "Share your dates, group, route and programme needs so 67 Tours & Travel can prepare an accurate Kenya quote for education, NGO or safari travel.",
+  keywords: "contact Kenya travel, request quote, travel enquiry, Kenya destination management, route planning quote"
+};
+
+const faqs = [
+  {
+    question: "What information do you need to provide a quote?",
+    answer: "We need dates, group size, arrival point, route ideas, and the programme or travel objective. For education groups, include age range and curriculum theme. For NGO programmes, include field sites and equipment. For safari and coast, include preferred regions and pace."
+  },
+  {
+    question: "How long does it take to receive a response?",
+    answer: "We aim to respond within 2–3 business days. Complex multi-site programmes or remote access routes may take longer to plan accurately."
+  },
+  {
+    question: "Can you work with flexible dates?",
+    answer: "Yes, we can provide options for different date ranges. Flexible dates often allow for better pricing and route planning."
+  },
+  {
+    question: "Do you work with international groups?",
+    answer: "Yes, we work with international education groups, NGOs, and leisure travellers. We coordinate Kenya-side movement and can advise on arrival logistics."
+  },
+  {
+    question: "What happens after I submit the form?",
+    answer: "We review your brief and may ask follow-up questions to clarify the route or requirements. Once we have enough information, we provide a detailed proposal with route options, costs, and timing."
+  }
+];
+
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
 
@@ -53,6 +82,18 @@ export default function Contact() {
               <button className="form-submit" type="submit">Send the brief <ArrowUpRight size={16} /></button>
             </form>
           )}
+        </div>
+      </section>
+
+      <section className="route-section container">
+        <div className="route-section__header"><RouteTick label="Frequently asked questions" number="03" /><div><h2>Questions about the quote process.</h2><p>Practical answers about what we need, timing, and what happens after you submit.</p></div></div>
+        <div className="faq-list">
+          {faqs.map((faq, index) => (
+            <div className="faq-item" key={index}>
+              <h3>{faq.question}</h3>
+              <p>{faq.answer}</p>
+            </div>
+          ))}
         </div>
       </section>
     </>

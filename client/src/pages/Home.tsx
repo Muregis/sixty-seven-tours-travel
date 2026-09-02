@@ -5,6 +5,12 @@ import { Link } from "wouter";
 import { imageUrls, destinations } from "@/lib/siteData";
 import { RouteTick, SectionIntro } from "@/components/SiteShell";
 
+const meta = {
+  title: "67 Tours & Travel | Kenya on the Ground",
+  description: "Kenya-based destination management for education groups, NGOs, safari and coast travel. Clear routing, practical standards, local coordination.",
+  keywords: "Kenya travel, destination management, education tours, NGO logistics, safari, coast travel, field trips"
+};
+
 const capabilities = [
   { number: "01", title: "Education & study tours", text: "Curriculum-led programmes with the group movement, student standards, local facilitation and learning context planned together.", href: "/education" },
   { number: "02", title: "NGO field logistics", text: "Multi-site movements, remote access, realistic route plans and the communication rhythm programme teams need.", href: "/ngo" },
@@ -53,7 +59,7 @@ export default function Home() {
         <div><RouteTick label="The decision" number="01" /></div>
         <div className="intro-section__copy">
           <h2>Can this team handle the whole movement?</h2>
-          <p>That is the right question. A Kenya itinerary is not only a list of places. It is vehicles arriving when expected, accommodation that works for the group, field contacts who know the day’s plan, and a response when the route changes.</p>
+          <p>That is the right question. A Kenya itinerary is not only a list of places. It is vehicles arriving when expected, accommodation that works for the group, field contacts who know the day's plan, and a response when the route changes.</p>
           <p>Our job is to make those operating decisions visible early enough to plan around them—whether the brief is academic, humanitarian, safari-led or coastal.</p>
           <Link href="/how-we-work" className="text-link">See how we work <ArrowUpRight size={15} /></Link>
         </div>
@@ -87,21 +93,51 @@ export default function Home() {
               </div>
             ))}
           </div>
+          <div className="destination-cta">
+            <Link to="/destinations" className="text-link">View all destinations <ArrowUpRight size={15} /></Link>
+          </div>
         </div>
       </section>
+
 
       <section className="home-split">
         <div className="home-split__image"><img src={imageUrls.safari} alt="A safari vehicle on a quiet Maasai Mara track" /></div>
         <div className="home-split__copy">
-          <RouteTick label="Also in the brief" number="03" />
+          <RouteTick label="Also in the brief" number="04" />
           <h2>Safari and coast, with the same operating discipline.</h2>
           <p>For leisure groups, we plan the handovers, road legs, stays and timing that make a trip easier to manage. Mara, Amboseli, Naivasha, the coast and the links between them are treated as a route—not a collection of brochure stops.</p>
           <Link href="/safari-coast" className="text-link">Review safari &amp; coast routes <ArrowUpRight size={15} /></Link>
         </div>
       </section>
 
+      <section className="trust-section container">
+        <div className="route-section__header">
+          <RouteTick label="Who we work with" />
+          <div>
+            <h2>Organisations that depend on reliable Kenya-side coordination.</h2>
+            <p>We work with schools, universities, NGOs and groups that need field movement to be as dependable as the programme itself.</p>
+          </div>
+        </div>
+        <div className="trust-placeholder">
+          <p><em>[Partner/Client Logo Section — For future placement of organisation logos]</em></p>
+          <p><em>[Testimonial Section — For future placement of verified client testimonials]</em></p>
+          <p><em>[Case Study Teasers — For future placement of anonymised programme summaries]</em></p>
+          <p className="trust-note">This section is structured to receive real proof points as they become available. No fabricated content will appear here.</p>
+        </div>
+      </section>
+
+      <section className="emergency-banner">
+        <div className="container">
+          <div className="emergency-banner__content">
+            <span className="emergency-banner__label">24-Hour Kenya Operations Line</span>
+            <span className="emergency-banner__phone">[Phone Number Placeholder]</span>
+            <span className="emergency-banner__note">For active programmes and urgent field coordination</span>
+          </div>
+        </div>
+      </section>
+
       <section className="cta-strip container">
-        <RouteTick label="Next step" number="04" />
+        <RouteTick label="Next step" number="05" />
         <div className="cta-strip__action">
           <div><h2>Bring us the route before it becomes a problem.</h2><p>Dates, group size, starting point and what the trip needs to achieve are enough for a useful first conversation.</p></div>
           <Link href="/contact" className="hero-cta">Request a quote <ArrowUpRight size={17} strokeWidth={1.8} /></Link>

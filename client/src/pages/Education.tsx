@@ -5,6 +5,12 @@ import { Link } from "wouter";
 import { PageHeader, RouteTick, SectionIntro } from "@/components/SiteShell";
 import { destinations, imageUrls } from "@/lib/siteData";
 
+const meta = {
+  title: "Education & Study Tours in Kenya | 67 Tours",
+  description: "Curriculum-led Kenya study tours with group movement, local facilitation, student standards and practical planning for schools and universities.",
+  keywords: "Kenya education tours, study tours, field trips, curriculum-aligned travel, student travel, academic programmes"
+};
+
 const checklist = [
   { title: "Learning objective", text: "Can each stop be tied to a subject, question or field task, rather than added because it is nearby?" },
   { title: "Group movement", text: "Are road legs, loading points, rest stops and headcounts realistic for the age and size of the group?" },
@@ -12,6 +18,33 @@ const checklist = [
   { title: "Local facilitation", text: "Is there a person on the Kenya side who can turn the programme brief into a useful visit on the ground?" },
   { title: "Safety planning", text: "Are emergency contacts, medical information, vehicle checks and changes to the plan understood by the right people?" },
   { title: "Contingency", text: "Does the route have a practical alternative when weather, road conditions or a site schedule changes?" },
+];
+
+const faqs = [
+  {
+    question: "What age ranges do you work with?",
+    answer: "We work with secondary school, university, and adult education groups. The route, supervision requirements, and activity levels are adjusted according to the age range and group maturity."
+  },
+  {
+    question: "How do you handle dietary requirements and accessibility?",
+    answer: "We collect dietary requirements, allergies, and mobility needs during the planning phase. Accommodation and meal arrangements are specified before booking. We advise on which sites can accommodate specific needs."
+  },
+  {
+    question: "What is the supervision model?",
+    answer: "The school or institution provides the primary supervision. We provide local facilitation, vehicle coordination, and on-the-ground support. We clarify roles and responsibilities before departure."
+  },
+  {
+    question: "How do you handle medical situations?",
+    answer: "We identify medical facilities along the route before departure. We carry emergency contact information for all participants. We have a defined response protocol for medical situations and evacuation if required."
+  },
+  {
+    question: "Can you help with curriculum alignment?",
+    answer: "We can help identify sites and activities that support specific curriculum objectives. We do not design the curriculum—we connect the academic brief to practical field sites and local context."
+  },
+  {
+    question: "What happens if the weather disrupts the plan?",
+    answer: "We have contingency plans for common weather disruptions. Alternative indoor activities, route adjustments, and timing changes are planned before departure. We communicate changes to the group lead immediately."
+  }
 ];
 
 export default function Education() {
@@ -55,8 +88,27 @@ export default function Education() {
         <div className="photo-break__image"><img src={imageUrls.education} alt="Students and a facilitator working at the coast" /></div>
       </section>
 
+      <section className="route-section container">
+        <div className="route-section__header"><RouteTick label="Frequently asked questions" number="05" /><div><h2>Questions education coordinators ask.</h2><p>Practical answers about supervision, safety, curriculum alignment, and what happens when the plan changes.</p></div></div>
+        <div className="faq-list">
+          {faqs.map((faq, index) => (
+            <div className="faq-item" key={index}>
+              <h3>{faq.question}</h3>
+              <p>{faq.answer}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="case-study-placeholder container">
+        <div className="route-section__header"><RouteTick label="Programme examples" /><div><h2>How education groups move through Kenya.</h2><p>The following section is reserved for anonymised case studies of actual education programmes we have coordinated. Each will include the learning objective, route structure, group size, and the operational decisions that made the programme work.</p></div></div>
+        <div className="trust-placeholder">
+          <p><em>[Case study cards to be added as programmes are completed and documented]</em></p>
+        </div>
+      </section>
+
       <section className="cta-strip container">
-        <RouteTick label="Next step" number="05" />
+        <RouteTick label="Next step" number="06" />
         <div className="cta-strip__action"><div><h2>Start with the programme question.</h2><p>Share the dates, age range, group size, curriculum or research theme, and the places you are considering.</p></div><Link href="/contact" className="hero-cta">Request a study-tour quote <ArrowUpRight size={17} /></Link></div>
       </section>
     </>
