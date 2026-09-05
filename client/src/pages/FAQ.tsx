@@ -1,12 +1,20 @@
 // Design note: Field Notes Modernism — FAQ is a practical reference, not marketing copy. Answers are specific and actionable.
 
 import { Link } from "wouter";
+import { ArrowUpRight } from "lucide-react";
+import { SEO } from "@/components/SEO";
 import { PageHeader, RouteTick } from "@/components/SiteShell";
 
-const meta = {
-  title: "FAQ | Kenya Travel & Programme Planning | 67 Tours",
-  description: "Frequently asked questions about Kenya church group travel, chama travel, corporate travel, school study tours, NGO field logistics, safari planning, pricing, and operational standards.",
-  keywords: "Kenya travel FAQ, church retreat FAQ, chama travel FAQ, corporate team building FAQ, school study tour FAQ, NGO logistics FAQ, safari FAQ, coast travel FAQ, travel planning"
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Kenya Travel FAQ",
+  "description": "Frequently asked questions about Kenya church group travel, chama travel, corporate travel, school study tours, NGO field logistics, safari planning, pricing, and operational standards.",
+  "publisher": {
+    "@type": "TravelAgency",
+    "name": "67 Tours & Travel",
+    "url": "https://67tours.co.ke"
+  }
 };
 
 const faqCategories = [
@@ -209,6 +217,12 @@ const faqCategories = [
 export default function FAQ() {
   return (
     <>
+      <SEO
+        title="FAQ | Kenya Travel & Programme Planning | 67 Tours"
+        description="Frequently asked questions about Kenya church group travel, chama travel, corporate travel, school study tours, NGO field logistics, safari planning, pricing, and operational standards."
+        canonical="https://67tours.co.ke/faq"
+        structuredData={structuredData}
+      />
       <PageHeader 
         eyebrow="FREQUENTLY ASKED QUESTIONS" 
         title="Practical answers for programme coordinators and group planners." 

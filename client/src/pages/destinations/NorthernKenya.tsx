@@ -2,18 +2,20 @@
 
 import { ArrowUpRight, Check, MapPin } from "lucide-react";
 import { Link } from "wouter";
+import { SEO } from "@/components/SEO";
 import { PageHeader, RouteTick } from "@/components/SiteShell";
 import { imageUrls } from "@/lib/siteData";
-
-const meta = {
-  title: "Northern Kenya Guide | Field Logistics | 67 Tours",
-  description: "Northern Kenya and Turkana field logistics: remote access, vehicle planning, fuel and communication for church groups, chamas, corporate groups, schools, NGOs, and safari travellers.",
-  keywords: "Northern Kenya, remote access, field logistics, Turkana, NGO programmes, adventure travel, remote Kenya, church retreats northern Kenya, chama tours northern Kenya, corporate travel northern Kenya"
-};
+import { destinationCoords, buildPlaceSchema } from "@/lib/schema";
 
 export default function DestinationNorthernKenya() {
   return (
     <>
+      <SEO
+        title="Northern Kenya Guide | Field Logistics | 67 Tours"
+        description="Northern Kenya and Turkana field logistics: remote access, vehicle planning, fuel and communication for church groups, chamas, corporate groups, schools, NGOs, and safari travellers."
+        canonical="https://67tours.co.ke/destinations/northern-kenya"
+        structuredData={buildPlaceSchema(destinationCoords['northern-kenya'])}
+      />
       <PageHeader 
         eyebrow="DESTINATION / NORTHERN KENYA" 
         title="Longer road legs, limited services, and route plans that need realistic allowances." 

@@ -112,7 +112,7 @@ export default function Chamas() {
 
       <section className="photo-break">
         <div className="photo-break__copy"><RouteTick label="Budget planning" number="04" /><h2>Making every shilling accountable.</h2><p>Chama travel requires a different approach to budgeting. Members need transparency, value, and assurance that their contributions are being used responsibly.</p></div>
-        <div className="photo-break__image"><img src={imageUrls.chama} alt="Chama members reviewing travel plans and budget at a meeting" /></div>
+        <div className="photo-break__image"><img src={imageUrls.chama} alt="Investment group members discussing travel plans at a meeting" /></div>
       </section>
 
       <section className="route-section container">
@@ -135,6 +135,15 @@ export default function Chamas() {
               <p>{faq.answer}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="route-section container">
+        <div className="route-section__header"><RouteTick label="Related destinations" number="06" /><div><h2>Destination detail pages for chama and investment group travel.</h2><p>These route pages cover access considerations, programme fit, and seasonal factors for the destinations Kenyan investment groups use for learning, strategic planning, and member appreciation.</p></div></div>
+        <div className="checklist">
+          <div className="checklist__item"><strong>01</strong><div><h3><Link href="/destinations/naivasha-nakuru" className="text-link">Naivasha &amp; Nakuru — Rift Valley investment sites</Link></h3><p>Naivasha's flower farms, geothermal projects, and agricultural enterprises; Nakuru's manufacturing and processing industries. These destinations support educational tours and learning visits.</p></div></div>
+          <div className="checklist__item"><strong>02</strong><div><h3><Link href="/destinations/coast-watamu" className="text-link">Coast / Watamu — coastal business and leisure</Link></h3><p>Mombasa's port facilities and coastal businesses provide learning opportunities, while resorts offer venues for strategic planning retreats and member appreciation trips.</p></div></div>
+          <div className="checklist__item"><strong>03</strong><div><h3><Link href="/destinations/nairobi" className="text-link">Nairobi — Central Kenya enterprises</Link></h3><p>Nairobi and surrounding regions have numerous manufacturing, real estate, and business enterprises that serve as educational destinations for investment groups.</p></div></div>
         </div>
       </section>
 

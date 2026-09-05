@@ -2,18 +2,20 @@
 
 import { ArrowUpRight, Check, MapPin } from "lucide-react";
 import { Link } from "wouter";
+import { SEO } from "@/components/SEO";
 import { PageHeader, RouteTick } from "@/components/SiteShell";
 import { imageUrls } from "@/lib/siteData";
-
-const meta = {
-  title: "Maasai Mara Guide | Safari & Education | 67 Tours",
-  description: "Maasai Mara safari planning: wildlife viewing, migration timing, access options, and programme relevance for church groups, chamas, corporate groups, schools, and NGOs.",
-  keywords: "Maasai Mara, Kenya safari, wildlife reserve, game drives, church retreats Maasai Mara, chama tours Maasai Mara, corporate travel Maasai Mara, education tours Maasai Mara, safari planning"
-};
+import { destinationCoords, buildPlaceSchema } from "@/lib/schema";
 
 export default function DestinationMaasaiMara() {
   return (
     <>
+      <SEO
+        title="Maasai Mara Guide | Safari & Education | 67 Tours"
+        description="Maasai Mara safari planning: wildlife viewing, migration timing, access options, and programme relevance for church groups, chamas, corporate groups, schools, and NGOs."
+        canonical="https://67tours.co.ke/destinations/maasai-mara"
+        structuredData={buildPlaceSchema(destinationCoords['maasai-mara'])}
+      />
       <PageHeader 
         eyebrow="DESTINATION / MAASAI MARA" 
         title="Wildlife density, but movement planning matters." 

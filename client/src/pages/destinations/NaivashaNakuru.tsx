@@ -2,18 +2,20 @@
 
 import { ArrowUpRight, Check, MapPin } from "lucide-react";
 import { Link } from "wouter";
+import { SEO } from "@/components/SEO";
 import { PageHeader, RouteTick } from "@/components/SiteShell";
 import { imageUrls } from "@/lib/siteData";
-
-const meta = {
-  title: "Naivasha & Nakuru Guide | Rift Valley | 67 Tours",
-  description: "Rift Valley destinations: freshwater ecology, geothermal energy, birdlife, and practical access for church groups, chamas, corporate groups, education groups, NGOs, and safari travellers.",
-  keywords: "Naivasha, Nakuru, Rift Valley, freshwater ecology, birdlife, church retreats Naivasha, chama tours Naivasha, corporate team building Naivasha, education tours Naivasha, NGO logistics Naivasha"
-};
+import { destinationCoords, buildPlaceSchema } from "@/lib/schema";
 
 export default function DestinationNaivashaNakuru() {
   return (
     <>
+      <SEO
+        title="Naivasha & Nakuru Guide | Rift Valley | 67 Tours"
+        description="Rift Valley destinations: freshwater ecology, geothermal energy, birdlife, and practical access for church groups, chamas, corporate groups, education groups, NGOs, and safari travellers."
+        canonical="https://67tours.co.ke/destinations/naivasha-nakuru"
+        structuredData={buildPlaceSchema(destinationCoords['naivasha-nakuru'])}
+      />
       <PageHeader 
         eyebrow="DESTINATION / NAIVASHA & NAKURU" 
         title="Rift Valley geography, freshwater ecology, and manageable links between learning sites." 

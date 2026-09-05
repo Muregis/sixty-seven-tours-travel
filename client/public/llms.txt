@@ -1,51 +1,80 @@
 # 67 Tours & Travel
 
-67 Tours & Travel is a Kenya-based destination management company specializing in group travel logistics for organisations including church groups, chamas (investment groups), corporate teams, schools, NGOs, and safari/coast travellers.
+Domain: https://67tours.co.ke
+Kenya-based destination management and group travel logistics company.
 
-## Business Overview
+## Business Identity
 
-**Founded**: Kenya-based operations with local expertise
-**Specialization**: Group travel logistics and destination management
-**Service Areas**: Kenya-wide coverage including Nairobi, Maasai Mara, Amboseli, Coast/Watamu, Rift Valley, Northern Kenya, and Western Kenya
+67 Tours & Travel is a Kenya-based destination management company specializing in end-to-end group travel logistics for organisations across Kenya and the wider East African region. We operate with a Kenya-side field team, local coordination expertise, and a focus on practical routing, clear programme alignment, and responsible budget management. Our brand position is "Kenya on the Ground" — reflecting our on-site operational presence rather than remote-only planning.
+
+**Operating Name**: 67 Tours & Travel
+**Short Name**: 67 Tours
+**Base of Operations**: Kenya (local field coordination)
+**Service Model**: End-to-end travel planning from brief to final movement
+**Primary Audience**: Organisations requiring multi-person group travel coordination
 
 ## Core Services
 
-1. **Church & Religious Group Travel** - Retreats, conferences, mission trips, pilgrimages
-2. **Chama & Investment Group Travel** - Strategic planning retreats, educational tours, member appreciation
-3. **Corporate & Office Travel** - Team building, end-of-year celebrations, incentive travel, conference trips
-4. **Schools & Education Travel** - Curriculum-led study tours, field trips, educational programmes
-5. **NGO Field Logistics** - Multi-site field logistics, remote access, vehicle planning, communication coordination
-6. **Safari & Coast Travel** - Operationally clear itineraries, timing, transfers, stays
+We operate six service lines, each tailored to a specific organisation type:
+
+1. **Church & Religious Group Travel** - Retreats, conferences, mission trips, pilgrimages, and large congregation movement coordination with Kenya-side routing and accommodation logistics.
+2. **Chama & Investment Group Travel** - Strategic planning retreats, educational tours, member appreciation outings, and destination-based annual general meetings for investment collectives.
+3. **Corporate & Office Travel** - Team building programs, end-of-year celebrations, incentive travel, conference delegate movement, and offsite meeting logistics for Kenyan and regional companies.
+4. **Schools & Education Travel** - Curriculum-led study tours, field trips, sporting tour logistics, and educational programme-aligned travel for primary, secondary, and tertiary institutions.
+5. **NGO Field Logistics** - Multi-site field visit coordination, remote access routing, vehicle planning, communication coordination, and accommodation for donor visits, monitoring trips, and staff retreats.
+6. **Safari & Coast Travel** - Operationally clear itineraries with precise timing, transfer coordination, accommodation stays, and ground logistics for leisure, incentive, and custom safari or coast-based travel.
+
+## Destination Coverage
+
+We cover seven primary destination zones across Kenya, each with specific operational considerations:
+
+1. **Nairobi** - Urban systems coordination, National Museum of Kenya, Nairobi National Park, conservation organisation visits, Giraffe Centre, and in-city conference logistics.
+2. **Maasai Mara** - Wildlife safari itineraries, Great Migration seasonal planning (July-October), Mara conservancies, Mara River crossings, 4x4 game drive logistics, and eco-lodge coordination.
+3. **Amboseli** - Elephant and Big Five wildlife viewing, Kilimanjaro backdrop itineraries, Amboseli ecosystem water pressure considerations, Maasai pastoral livelihood context, and airstrip transfers.
+4. **Coast / Watamu** - Marine reserve access, Watamu Marine National Park, mangrove ecosystem visits, Mida Creek birdwatching, Gede Ruins cultural tours, beachfront accommodation, and coastal community context.
+5. **Naivasha / Nakuru** - Rift Valley freshwater ecology, Lake Naivasha boat safaris, Crescent Island, Hell's Gate cycling, Lake Nakuru flamingo and rhino viewing, and lodge coordination.
+6. **Northern Kenya** - Remote access logistics, Samburu National Reserve, Shaba National Reserve, Meru National Park, Marsabit, community conservancies, airstrip routing, and multi-day overland coordination.
+7. **Kakamega** - Kakamega Forest National Reserve, primary Guineo-Congolian rainforest in Kenya, birdwatching trails, primate viewing, canopy walkway, and Western Kenya community context.
 
 ## Operational Philosophy
 
-- Clear routing and practical standards
-- Local coordination with Kenya-side expertise
-- Programme-aligned travel planning
-- Group movement optimisation
-- Responsible budget management
-
-## Contact Information
-
-**Primary Focus**: Kenya destination management and group travel logistics
-**Service Model**: End-to-end travel planning from brief to final movement
-**Coordination**: Local Kenya-based team with field experience
-
-## Destinations Covered
-
-- Nairobi (urban systems, museums, conservation organisations)
-- Maasai Mara (wildlife, seasonal considerations)
-- Amboseli (wildlife, water pressure, pastoral livelihoods)
-- Coast/Watamu (marine systems, mangroves, coastal communities)
-- Rift Valley (Naivasha, Nakuru, freshwater ecology)
-- Northern Kenya (remote access, logistics coordination)
-- Western Kenya (Kakamega, forest ecology, community context)
+- Clear routing and practical, ground-verified standards — no map-only itineraries.
+- Local coordination with Kenya-side field expertise and on-the-ground partners.
+- Programme-aligned travel planning that matches the client's objectives, not generic packages.
+- Group movement optimisation for large parties with efficient transfer and staging plans.
+- Responsible budget management with transparent cost breakdowns and no hidden fees.
+- Seasonal awareness — itineraries reflect weather patterns, wildlife timing, and operational realities.
 
 ## Website Structure
 
-The website provides detailed information about:
-- Specific service offerings for different organisation types
-- Destination guides with access and seasonal information
-- Operational insights and planning considerations
-- Quote request and contact processes
-- FAQ for common travel planning questions
+The public website at https://67tours.co.ke includes these routes and purposes:
+
+| Route | Page Purpose |
+|---|---|
+| `/` | Home / landing — service overview, value proposition, primary quote CTA |
+| `/church-religious` | Church and religious group travel service detail |
+| `/chamas` | Chama and investment group travel service detail |
+| `/corporate` | Corporate and office travel service detail |
+| `/schools` | Schools and education travel service detail |
+| `/ngo` | NGO field logistics service detail |
+| `/safari-coast` | Safari and coast leisure travel service detail |
+| `/destinations` | Destinations hub — all seven destination zones overview |
+| `/destinations/nairobi` | Nairobi destination detail page |
+| `/destinations/maasai-mara` | Maasai Mara destination detail page |
+| `/destinations/amboseli` | Amboseli destination detail page |
+| `/destinations/coast-watamu` | Coast / Watamu destination detail page |
+| `/destinations/naivasha-nakuru` | Naivasha / Nakuru destination detail page |
+| `/destinations/northern-kenya` | Northern Kenya destination detail page |
+| `/destinations/kakamega` | Kakamega destination detail page |
+| `/how-we-work` | Operational process, planning methodology, field coordination explanation |
+| `/insights` | Field notes, operational considerations, seasonal guidance, planning articles |
+| `/faq` | Frequently asked questions about booking, deposits, logistics, timelines |
+| `/contact` | Contact form and quote request page — primary conversion action |
+
+## Contact & Quote Information
+
+- **Primary Conversion Action**: Request a quote via the `/contact` page form.
+- **Response Pattern**: Kenya-based team responds with initial routing and cost framework based on group size, dates, destination, and organisational objectives.
+- **Website**: https://67tours.co.ke
+- **Sitemap**: https://67tours.co.ke/sitemap.xml
+- **For Crawlers**: All public pages above are indexable. `/404` and `/api/*` are excluded.

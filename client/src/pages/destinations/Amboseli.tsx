@@ -2,18 +2,20 @@
 
 import { ArrowUpRight, Check, MapPin } from "lucide-react";
 import { Link } from "wouter";
+import { SEO } from "@/components/SEO";
 import { PageHeader, RouteTick } from "@/components/SiteShell";
 import { imageUrls } from "@/lib/siteData";
-
-const meta = {
-  title: "Amboseli Guide | Wildlife & Kilimanjaro | 67 Tours",
-  description: "Amboseli safari and education: elephant populations, Kilimanjaro views, compact park size, and practical route planning for church groups, chamas, corporate groups, schools, and NGOs.",
-  keywords: "Amboseli, Amboseli National Park, Kenya wildlife, water systems, conservation education, church retreats Amboseli, chama tours Amboseli, corporate travel Amboseli, education tours Amboseli, safari Amboseli"
-};
+import { destinationCoords, buildPlaceSchema } from "@/lib/schema";
 
 export default function DestinationAmboseli() {
   return (
     <>
+      <SEO
+        title="Amboseli Guide | Wildlife & Kilimanjaro | 67 Tours"
+        description="Amboseli safari and education: elephant populations, Kilimanjaro views, compact park size, and practical route planning for church groups, chamas, corporate groups, schools, and NGOs."
+        canonical="https://67tours.co.ke/destinations/amboseli"
+        structuredData={buildPlaceSchema(destinationCoords['amboseli'])}
+      />
       <PageHeader 
         eyebrow="DESTINATION / AMBOSELI" 
         title="Compact wildlife setting with Mount Kilimanjaro views." 

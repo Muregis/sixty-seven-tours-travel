@@ -114,7 +114,7 @@ export default function Corporate() {
 
       <section className="photo-break">
         <div className="photo-break__copy"><RouteTick label="Planning for corporate groups" number="04" /><h2>The details that make corporate travel work.</h2><p>Corporate travel has specific requirements that differ from leisure travel. These considerations must be built into the plan from the start.</p></div>
-        <div className="photo-break__image"><img src={imageUrls.corporate} alt="Corporate team during a team-building activity" /></div>
+        <div className="photo-break__image"><img src={imageUrls.corporate} alt="Corporate team participating in team-building activity in Kenya" /></div>
       </section>
 
       <section className="route-section container">

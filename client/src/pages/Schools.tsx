@@ -102,7 +102,7 @@ export default function Schools() {
 
       <section className="photo-break">
         <div className="photo-break__copy"><RouteTick label="On the day" number="04" /><h2>Local facilitation should add context, not noise.</h2><p>The right facilitator knows when to let a group observe, when to ask a better question and when to keep the movement on time. We keep the academic lead, the local context and the operating plan in the same conversation.</p></div>
-        <div className="photo-break__image"><img src={imageUrls.education} alt="Students and a facilitator working at the coast" /></div>
+        <div className="photo-break__image"><img src={imageUrls.education} alt="Students participating in educational field study in Kenya" /></div>
       </section>
 
       <section className="route-section container">
@@ -117,10 +117,30 @@ export default function Schools() {
         </div>
       </section>
 
-      <section className="case-study-placeholder container">
-        <div className="route-section__header"><RouteTick label="Programme examples" /><div><h2>How education groups move through Kenya.</h2><p>The following section is reserved for anonymised case studies of actual education programmes we have coordinated. Each will include the learning objective, route structure, group size, and the operational decisions that made the programme work.</p></div></div>
-        <div className="trust-placeholder">
-          <p><em>[Case study cards to be added as programmes are completed and documented]</em></p>
+      <section className="programme-examples container">
+        <div className="route-section__header"><RouteTick label="Programme examples" /><div><h2>How education groups move through Kenya.</h2><p>These programme structures show how school groups move across Kenya for different curriculum subjects — from freshwater ecology in the Rift Valley to wildlife observation in Amboseli and marine systems at the coast.</p></div></div>
+        <div className="checklist">
+          <div className="checklist__item">
+            <strong>01</strong>
+            <div>
+              <h3>Nairobi → Naivasha → Nakuru compact programme</h3>
+              <p>The most common structure for secondary school groups: start in Nairobi for museums and conservation organisations, then move to the Rift Valley for freshwater ecology and birdlife over 3–4 days total. Road legs are short enough to keep the group in the field for most of the day.</p>
+            </div>
+          </div>
+          <div className="checklist__item">
+            <strong>02</strong>
+            <div>
+              <h3>Amboseli ecology and livelihoods programme</h3>
+              <p>Built around wildlife observation, water pressure discussion, pastoral livelihood context and conservation questions. Works well for biology, geography, and social studies groups combining observation with structured field notes.</p>
+            </div>
+          </div>
+          <div className="checklist__item">
+            <strong>03</strong>
+            <div>
+              <h3>Coast / Watamu marine systems segment</h3>
+              <p>Marine ecology, mangroves, tide timing, and coastal communities planned as a 3–4 day add-on or standalone. Group supervision, heat management, and water activity safety standards are pre-planned with the school before movement.</p>
+            </div>
+          </div>
         </div>
       </section>
 

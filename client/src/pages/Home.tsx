@@ -59,7 +59,7 @@ export default function Home() {
           </div>
         </div>
         <div className="home-hero__visual">
-          <img src={imageUrls.hero} alt="Group movement planning in Kenya — route board and vehicle coordination" />
+          <img src={imageUrls.hero} alt="Kenya safari landscape with wildlife viewing against dramatic skies" />
           <span className="hero-index">FIELD NOTE / 01</span>
           <div className="route-card">
             <div className="route-card__top"><span>Route board / Kenya</span><MapPin size={15} /></div>
@@ -125,7 +125,7 @@ export default function Home() {
       </section>
 
       <section className="home-split">
-        <div className="home-split__image"><img src={imageUrls.safari} alt="A safari vehicle on a quiet Maasai Mara track" /></div>
+        <div className="home-split__image"><img src={imageUrls.safari} alt="Kenya safari wildlife experience with natural landscape" /></div>
         <div className="home-split__copy">
           <RouteTick label="Also in the brief" number="04" />
           <h2>Safari and coast, with the same operating discipline.</h2>
@@ -136,26 +136,51 @@ export default function Home() {
 
       <section className="trust-section container">
         <div className="route-section__header">
-          <RouteTick label="Who we work with" />
+          <RouteTick label="Operating Standards" />
           <div>
-            <h2>Organisations that depend on reliable Kenya-side coordination.</h2>
-            <p>We work with churches, chamas, corporate offices, schools, NGOs and groups that need field movement to be as dependable as the programme itself.</p>
+            <h2>The discipline that makes the route dependable.</h2>
+            <p>Organisations work with us because the operating standard is the same for a church retreat, a chama educational tour, a corporate strategy retreat, a school study programme and an NGO multi-site field movement.</p>
           </div>
         </div>
-        <div className="trust-placeholder">
-          <p><em>[Partner/Client Logo Section — For future placement of organisation logos]</em></p>
-          <p><em>[Testimonial Section — For future placement of verified client testimonials]</em></p>
-          <p><em>[Case Study Teasers — For future placement of anonymised programme summaries]</em></p>
-          <p className="trust-note">This section is structured to receive real proof points as they become available. No fabricated content will appear here.</p>
+        <div className="checklist">
+          <div className="checklist__item">
+            <strong>01</strong>
+            <div>
+              <h3>Vehicle planning</h3>
+              <p>Every vehicle assigned by route, group size and road condition, not availability alone. Pre-departure checks and contact points are written, not assumed.</p>
+            </div>
+          </div>
+          <div className="checklist__item">
+            <strong>02</strong>
+            <div>
+              <h3>Accommodation screening</h3>
+              <p>Stays are selected against rooming, meal timing, group access and proximity to the next stop. A venue is booked only when the group's practical needs are confirmed in writing.</p>
+            </div>
+          </div>
+          <div className="checklist__item">
+            <strong>03</strong>
+            <div>
+              <h3>On-the-ground contact rhythm</h3>
+              <p>Each day has a named Kenya-side contact, pickup windows, and a response standard for when the route changes mid-movement.</p>
+            </div>
+          </div>
+          <div className="checklist__item">
+            <strong>04</strong>
+            <div>
+              <h3>Route margin planning</h3>
+              <p>Road legs, transfers and site windows all include realistic margin, so a single delay does not cascade into a broken programme day.</p>
+            </div>
+          </div>
         </div>
       </section>
 
       <section className="emergency-banner">
         <div className="container">
           <div className="emergency-banner__content">
-            <span className="emergency-banner__label">24-Hour Kenya Operations Line</span>
-            <span className="emergency-banner__phone">[Phone Number Placeholder]</span>
-            <span className="emergency-banner__note">For active programmes and urgent field coordination</span>
+            <span className="emergency-banner__label">For active programmes in Kenya</span>
+            <span className="emergency-banner__phone">Use the on-call contact in your route sheet.</span>
+            <span className="emergency-banner__note">New enquiries → request a quote form; active programmes → the number and contact in your signed route sheet</span>
+            <Link href="/contact" className="text-link" style={{ color: "#fff" }}>Or contact the planning team →</Link>
           </div>
         </div>
       </section>

@@ -145,6 +145,208 @@ function vitePluginManusDebugCollector(): Plugin {
           }
         });
       });
+
+      server.middlewares.use("/__manus__/debug-collector.js", (req, res) => {
+        if (req.method !== "GET") {
+          res.writeHead(405, { "Content-Type": "text/plain" });
+          res.end("Method Not Allowed");
+          return;
+        }
+
+        const debugCollectorScript = `(function () {
+  "use strict";
+  if (window.__MANUS_DEBUG_COLLECTOR__) return;
+
+  const CONFIG = {
+    reportEndpoint: "/__manus__/logs",
+    reportInterval: 2000,
+  };
+
+  const store = {
+    consoleLogs: [],
+    networkRequests: [],
+    uiEvents: [],
+  };
+
+  function sanitizeValue(value, depth) {
+    if (depth === void 0) depth = 0;
+    if (depth > 3) return "[Max Depth]";
+    if (value === null || value === undefined) return value;
+    if (typeof value === "string") return value.length > 500 ? value.slice(0, 500) + "..." : value;
+    if (typeof value !== "object") return value;
+    if (Array.isArray(value)) return value.slice(0, 50).map(function (v) { return sanitizeValue(v, depth + 1); });
+    var out = {};
+    for (var k in value) {
+      if (Object.prototype.hasOwnProperty.call(value, k)) {
+        out[k] = sanitizeValue(value[k], depth + 1);
+      }
+    }
+    return out;
+  }
+
+  function formatArgs(args) {
+    var result = [];
+    for (var i = 0; i < args.length; i++) {
+      var arg = args[i];
+      try {
+        if (arg instanceof Error) result.push({ type: "Error", message: arg.message, stack: arg.stack });
+        else if (typeof arg === "object") result.push(sanitizeValue(arg));
+        else result.push(String(arg));
+      } catch (e) { result.push("[Unserializable]"); }
+    }
+    return result;
+  }
+
+  var originalConsole = {
+    log: console.log.bind(console),
+    debug: console.debug.bind(console),
+    info: console.info.bind(console),
+    warn: console.warn.bind(console),
+    error: console.error.bind(console),
+  };
+
+  ["log", "debug", "info", "warn", "error"].forEach(function (method) {
+    console[method] = function () {
+      var args = Array.prototype.slice.call(arguments);
+      store.consoleLogs.push({
+        timestamp: Date.now(),
+        level: method.toUpperCase(),
+        args: formatArgs(args),
+        stack: method === "error" ? new Error().stack : null,
+      });
+      originalConsole[method].apply(console, args);
+    };
+  });
+
+  window.addEventListener("error", function (event) {
+    store.consoleLogs.push({
+      timestamp: Date.now(),
+      level: "ERROR",
+      args: [{ type: "UncaughtError", message: event.message, filename: event.filename, lineno: event.lineno }],
+    });
+  });
+
+  window.addEventListener("unhandledrejection", function (event) {
+    var reason = event.reason;
+    store.consoleLogs.push({
+      timestamp: Date.now(),
+      level: "ERROR",
+      args: [{ type: "UnhandledRejection", reason: reason && reason.message ? reason.message : String(reason) }],
+    });
+  });
+
+  var originalFetch = window.fetch.bind(window);
+  window.fetch = function (input, init) {
+    init = init || {};
+    var startTime = Date.now();
+    var url = typeof input === "string" ? input : (input && (input.url || String(input))) || "";
+    var method = init.method || (input && input.method) || "GET";
+    if (url.indexOf("/__manus__/") === 0) return originalFetch(input, init);
+    return originalFetch(input, init).then(function (response) {
+      store.networkRequests.push({
+        timestamp: startTime,
+        type: "fetch",
+        method: method.toUpperCase(),
+        url: url,
+        response: { status: response.status, statusText: response.statusText },
+        duration: Date.now() - startTime,
+      });
+      return response;
+    }).catch(function (error) {
+      store.networkRequests.push({
+        timestamp: startTime,
+        type: "fetch",
+        method: method.toUpperCase(),
+        url: url,
+        duration: Date.now() - startTime,
+        error: { message: error.message },
+      });
+      throw error;
+    });
+  };
+
+  var originalXHROpen = XMLHttpRequest.prototype.open;
+  var originalXHRSend = XMLHttpRequest.prototype.send;
+  XMLHttpRequest.prototype.open = function (method, url) {
+    this._manusData = { method: (method || "GET").toUpperCase(), url: url, startTime: null };
+    return originalXHROpen.apply(this, arguments);
+  };
+  XMLHttpRequest.prototype.send = function () {
+    var xhr = this;
+    if (xhr._manusData && xhr._manusData.url && xhr._manusData.url.indexOf("/__manus__/") !== 0) {
+      xhr._manusData.startTime = Date.now();
+      xhr.addEventListener("load", function () {
+        store.networkRequests.push({
+          timestamp: xhr._manusData.startTime,
+          type: "xhr",
+          method: xhr._manusData.method,
+          url: xhr._manusData.url,
+          response: { status: xhr.status, statusText: xhr.statusText },
+          duration: Date.now() - xhr._manusData.startTime,
+        });
+      });
+      xhr.addEventListener("error", function () {
+        store.networkRequests.push({
+          timestamp: xhr._manusData.startTime,
+          type: "xhr",
+          method: xhr._manusData.method,
+          url: xhr._manusData.url,
+          duration: Date.now() - xhr._manusData.startTime,
+          error: { message: "Network error" },
+        });
+      });
+    }
+    return originalXHRSend.apply(this, arguments);
+  };
+
+  function reportLogs() {
+    var consoleLogs = store.consoleLogs.splice(0);
+    var networkRequests = store.networkRequests.splice(0);
+    var uiEvents = store.uiEvents.splice(0);
+    if (consoleLogs.length === 0 && networkRequests.length === 0 && uiEvents.length === 0) return;
+    var payload = {
+      timestamp: Date.now(),
+      consoleLogs: consoleLogs,
+      networkRequests: networkRequests,
+      sessionEvents: uiEvents,
+      uiEvents: uiEvents,
+    };
+    originalFetch(CONFIG.reportEndpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    }).catch(function () {
+      store.consoleLogs = store.consoleLogs.concat(consoleLogs).slice(-500);
+      store.networkRequests = store.networkRequests.concat(networkRequests).slice(-200);
+      store.uiEvents = store.uiEvents.concat(uiEvents).slice(-500);
+    });
+  }
+
+  setInterval(reportLogs, CONFIG.reportInterval);
+
+  window.addEventListener("beforeunload", function () {
+    if (store.consoleLogs.length === 0 && store.networkRequests.length === 0 && store.uiEvents.length === 0) return;
+    var payload = {
+      timestamp: Date.now(),
+      consoleLogs: store.consoleLogs.slice(-50),
+      networkRequests: store.networkRequests.slice(-20),
+      sessionEvents: store.uiEvents.slice(-100),
+      uiEvents: store.uiEvents.slice(-100),
+    };
+    if (navigator.sendBeacon) {
+      try { navigator.sendBeacon(CONFIG.reportEndpoint, JSON.stringify(payload)); } catch (e) {}
+    }
+  });
+
+  window.__MANUS_DEBUG_COLLECTOR__ = { version: "2.0-inline", store: store, forceReport: reportLogs };
+})();`;
+
+        res.writeHead(200, {
+          "Content-Type": "text/javascript",
+          "Cache-Control": "no-store",
+        });
+        res.end(debugCollectorScript);
+      });
     },
   };
 }
@@ -202,7 +404,16 @@ function vitePluginStorageProxy(): Plugin {
   };
 }
 
-const plugins = [react(), tailwindcss(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
+const isProduction = process.env.NODE_ENV === 'production';
+const plugins = [
+  react(),
+  tailwindcss(),
+  ...(isProduction ? [] : [
+    vitePluginManusRuntime(),
+    vitePluginManusDebugCollector(),
+    vitePluginStorageProxy()
+  ])
+];
 
 export default defineConfig({
   base: "/",

@@ -2,18 +2,20 @@
 
 import { ArrowUpRight, Check, MapPin } from "lucide-react";
 import { Link } from "wouter";
+import { SEO } from "@/components/SEO";
 import { PageHeader, RouteTick } from "@/components/SiteShell";
 import { imageUrls } from "@/lib/siteData";
-
-const meta = {
-  title: "Nairobi Guide | Kenya Programme Hub | 67 Tours",
-  description: "Nairobi as church, chama, corporate, education and NGO hub: museums, conservation organisations, urban systems, retreat centres, and practical starting point for Kenya programmes.",
-  keywords: "Nairobi Kenya, Nairobi travel, church retreats Nairobi, chama tours Nairobi, corporate travel Nairobi, education tours Nairobi, NGO programmes Nairobi, city field sites, conservation organisations"
-};
+import { destinationCoords, buildPlaceSchema } from "@/lib/schema";
 
 export default function DestinationNairobi() {
   return (
     <>
+      <SEO
+        title="Nairobi Guide | Kenya Programme Hub | 67 Tours"
+        description="Nairobi as church, chama, corporate, education and NGO hub: museums, conservation organisations, urban systems, retreat centres, and practical starting point for Kenya programmes."
+        canonical="https://67tours.co.ke/destinations/nairobi"
+        structuredData={buildPlaceSchema(destinationCoords['nairobi'])}
+      />
       <PageHeader 
         eyebrow="DESTINATION / NAIROBI" 
         title="The operating hub for most Kenya programmes." 

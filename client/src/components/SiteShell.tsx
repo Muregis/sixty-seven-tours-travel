@@ -4,6 +4,7 @@ import { useEffect, useState, type ReactNode } from "react";
 import { Link, useLocation } from "wouter";
 import { ArrowUpRight, ChevronDown, Menu, X } from "lucide-react";
 import { imageUrls, navItems, footerGroups } from "@/lib/siteData";
+import { localBusinessSchema } from "@/lib/schema";
 
 export function SiteMark({ compact = false }: { compact?: boolean }) {
   return (
@@ -51,6 +52,25 @@ export function SiteShell({ children }: { children: ReactNode }) {
     document.body.classList.toggle("nav-open", open);
     return () => document.body.classList.remove("nav-open");
   }, [open]);
+
+  useEffect(() => {
+    // Add local business schema to all pages
+    let existingScript = document.getElementById('local-business-schema');
+    if (existingScript) {
+      existingScript.remove();
+    }
+    
+    const script = document.createElement('script');
+    script.id = 'local-business-schema';
+    script.type = 'application/ld+json';
+    script.textContent = JSON.stringify(localBusinessSchema);
+    document.head.appendChild(script);
+
+    return () => {
+      const script = document.getElementById('local-business-schema');
+      if (script) script.remove();
+    };
+  }, []);
 
   return (
     <div className="site-frame">

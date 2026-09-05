@@ -2,18 +2,20 @@
 
 import { ArrowUpRight, Check, MapPin } from "lucide-react";
 import { Link } from "wouter";
+import { SEO } from "@/components/SEO";
 import { PageHeader, RouteTick } from "@/components/SiteShell";
 import { imageUrls } from "@/lib/siteData";
-
-const meta = {
-  title: "Kakamega Guide | Western Kenya | 67 Tours",
-  description: "Kakamega forest ecology, western Kenya community context, and education programme planning for forest and community studies for church groups, chamas, corporate groups, schools, and NGOs.",
-  keywords: "Kakamega, Kakamega Forest, Western Kenya, forest ecology, community context, education tours, field programmes, church retreats Kakamega, chama tours Kakamega, corporate travel Kakamega"
-};
+import { destinationCoords, buildPlaceSchema } from "@/lib/schema";
 
 export default function DestinationKakamega() {
   return (
     <>
+      <SEO
+        title="Kakamega Guide | Western Kenya | 67 Tours"
+        description="Kakamega forest ecology, western Kenya community context, and education programme planning for forest and community studies for church groups, chamas, corporate groups, schools, and NGOs."
+        canonical="https://67tours.co.ke/destinations/kakamega"
+        structuredData={buildPlaceSchema(destinationCoords['kakamega'])}
+      />
       <PageHeader 
         eyebrow="DESTINATION / KAKAMEGA & WESTERN KENYA" 
         title="Forest ecology, community context, and a different operating rhythm from the main safari circuit." 

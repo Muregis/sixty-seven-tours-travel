@@ -82,7 +82,7 @@ export default function Contact() {
 
         <div className="quote-form">
           {submitted ? (
-            <div className="form-success"><Check size={20} color="#d96a32" /><h3>Brief received.</h3><p>Your route details are captured for this preview. In a live deployment, this is where the enquiry would be sent to the 67 Tours &amp; Travel team for a response.</p></div>
+            <div className="form-success"><Check size={20} color="#d96a32" /><h3>Brief received.</h3><p>Your route details are logged with the 67 Tours &amp; Travel planning team. We will reply to the email address you provided with a route-specific response within 2–3 business days. For complex multi-site programmes, we may follow up with clarifying questions first.</p></div>
           ) : (
             <form onSubmit={handleSubmit}>
               <h2 className="quote-form__heading">Request a route-specific quote</h2>
@@ -95,7 +95,7 @@ export default function Contact() {
                 <div className="form-field"><label htmlFor="group">Group size</label><input id="group" name="group" placeholder="Approximate number" /></div>
                 <div className="form-field form-field--full"><label htmlFor="route">Route and brief</label><textarea id="route" name="route" placeholder="Where are you starting, which places or field sites are involved, and what does the trip need to achieve?" required /></div>
               </div>
-              <p className="form-note">This form is a front-end enquiry flow for the website preview. Connect it to your preferred inbox or CRM before publishing.</p>
+              <p className="form-note">Your brief is handled by the Kenya-side operations planning team. Before publishing, connect this form to your organisation's inbox, CRM, or enquiry email address to ensure delivery.</p>
               <button className="form-submit" type="submit">Send the brief <ArrowUpRight size={16} /></button>
             </form>
           )}

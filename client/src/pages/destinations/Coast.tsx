@@ -2,18 +2,20 @@
 
 import { ArrowUpRight, Check, MapPin } from "lucide-react";
 import { Link } from "wouter";
+import { SEO } from "@/components/SEO";
 import { PageHeader, RouteTick } from "@/components/SiteShell";
 import { imageUrls } from "@/lib/siteData";
-
-const meta = {
-  title: "Watamu Coast Guide | Marine & Education | 67 Tours",
-  description: "Watamu marine park, coastal education, mangrove ecosystems, and practical planning for coastal programmes and leisure travel for church groups, chamas, corporate groups, schools, and NGOs.",
-  keywords: "Kenya Coast, Watamu, marine systems, mangroves, coastal education, beach holidays, Watamu travel, church retreats Watamu, chama tours coast, corporate travel coast, education tours coast"
-};
+import { destinationCoords, buildPlaceSchema } from "@/lib/schema";
 
 export default function DestinationCoast() {
   return (
     <>
+      <SEO
+        title="Watamu Coast Guide | Marine & Education | 67 Tours"
+        description="Watamu marine park, coastal education, mangrove ecosystems, and practical planning for coastal programmes and leisure travel for church groups, chamas, corporate groups, schools, and NGOs."
+        canonical="https://67tours.co.ke/destinations/coast-watamu"
+        structuredData={buildPlaceSchema(destinationCoords['coast-watamu'])}
+      />
       <PageHeader 
         eyebrow="DESTINATION / COAST / WATAMU" 
         title="Marine systems, mangroves, and coastal communities." 

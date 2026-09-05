@@ -100,7 +100,7 @@ export default function Ngo() {
 
       <section className="photo-break">
         <div className="photo-break__copy"><RouteTick label="Programme language" number="04" /><h2>Clear enough to brief. Flexible enough to work.</h2><p>We do not treat the movement plan as a fixed promise when field conditions are not fixed. The useful plan is the one that shows the assumptions, the decision points and the next action.</p></div>
-        <div className="photo-break__image"><img src={imageUrls.ngo} alt="Field team pausing beside a vehicle on a northern Kenya route" /></div>
+        <div className="photo-break__image"><img src={imageUrls.ngo} alt="NGO field team coordinating logistics in rural Kenya" /></div>
       </section>
 
       <section className="route-section container">
@@ -115,10 +115,30 @@ export default function Ngo() {
         </div>
       </section>
 
-      <section className="case-study-placeholder container">
-        <div className="route-section__header"><RouteTick label="Programme examples" /><div><h2>How NGO programmes move through Kenya.</h2><p>The following section is reserved for anonymised case studies of actual NGO field programmes we have coordinated. Each will include the programme objective, route structure, team size, and the operational decisions that made the field work possible.</p></div></div>
-        <div className="trust-placeholder">
-          <p><em>[Case study cards to be added as programmes are completed and documented]</em></p>
+      <section className="programme-examples container">
+        <div className="route-section__header"><RouteTick label="Programme examples" /><div><h2>How NGO programmes move through Kenya.</h2><p>These programme structures show how field teams move across Kenya for different types of NGO work — from corridor movements to remote field access and community engagement routes.</p></div></div>
+        <div className="checklist">
+          <div className="checklist__item">
+            <strong>01</strong>
+            <div>
+              <h3>Nairobi → Rift Valley corridor programme</h3>
+              <p>Useful for linking Nairobi with Nakuru, Naivasha, Baringo and onward programme locations. Vehicle assignments, rest points, and handover contacts are fixed before mobilisation so the field team can focus on the programme rather than the transport.</p>
+            </div>
+          </div>
+          <div className="checklist__item">
+            <strong>02</strong>
+            <div>
+              <h3>Northern Kenya / Turkana multi-site movement</h3>
+              <p>Longer road legs, limited services, and route plans with realistic fuel, rest, and communication allowances. Vehicle selection is based on road condition, load, and season — not availability alone. Fallback accommodation and contact points are confirmed before departure.</p>
+            </div>
+          </div>
+          <div className="checklist__item">
+            <strong>03</strong>
+            <div>
+              <h3>Western Kenya community and field programmes</h3>
+              <p>Multi-site movements through Kisumu, Kakamega and surrounding counties where timing and local coordination matter. The route is documented as a sequence of handovers rather than a spreadsheet of distances — each pickup point has a named contact.</p>
+            </div>
+          </div>
         </div>
       </section>
 

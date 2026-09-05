@@ -112,7 +112,7 @@ export default function Church() {
 
       <section className="photo-break">
         <div className="photo-break__copy"><RouteTick label="On the ground" number="04" /><h2>Local coordination should support the ministry, not add administrative burden.</h2><p>The right travel partner understands that church trips have a pastoral dimension. When a transport issue arises, when a member needs assistance, or when the programme needs to adjust for spiritual reasons, the response should be practical and respectful.</p></div>
-        <div className="photo-break__image"><img src={imageUrls.church} alt="Church group leader reviewing schedule with transport coordinator" /></div>
+        <div className="photo-break__image"><img src={imageUrls.church} alt="Church group gathered for retreat activities in Kenya" /></div>
       </section>
 
       <section className="route-section container">
@@ -124,6 +124,15 @@ export default function Church() {
               <p>{faq.answer}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="route-section container">
+        <div className="route-section__header"><RouteTick label="Related destinations" number="05" /><div><h2>Destination detail pages for church programme planning.</h2><p>These route pages cover the access considerations, programme fit, and seasonal factors for the destinations Kenyan church groups use most.</p></div></div>
+        <div className="checklist">
+          <div className="checklist__item"><strong>01</strong><div><h3><Link href="/destinations/naivasha-nakuru" className="text-link">Naivasha &amp; Nakuru — Rift Valley retreat centres</Link></h3><p>Retreat centres, meeting spaces, and environments suitable for reflection and fellowship. Manageable road access from Nairobi for large groups.</p></div></div>
+          <div className="checklist__item"><strong>02</strong><div><h3><Link href="/destinations/coast-watamu" className="text-link">Coast / Watamu — coastal prayer and retreat venues</Link></h3><p>Mombasa, Malindi, and Watamu provide venues for church retreats with a different environment. Longer road journey or flight needs to be factored into the plan.</p></div></div>
+          <div className="checklist__item"><strong>03</strong><div><h3><Link href="/destinations/kakamega" className="text-link">Kakamega &amp; Western Kenya — mission fields</Link></h3><p>Kisumu, Kakamega, and surrounding regions are common destinations for mission trips and outreach work, with local church connections and community engagement shaping the route.</p></div></div>
         </div>
       </section>
 

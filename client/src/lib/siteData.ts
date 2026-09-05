@@ -50,7 +50,6 @@ export const footerGroups = [
       { href: "/how-we-work", label: "About us" },
       { href: "/faq", label: "FAQ" },
       { href: "/contact", label: "Contact" },
-      { href: "/emergency", label: "Emergency contact" },
     ],
   },
 ];
@@ -104,9 +103,33 @@ export const pageMeta: Record<string, { title: string; description: string }> = 
     title: "Request a Kenya Travel Quote | 67 Tours",
     description: "Share your dates, group, route and programme needs so 67 Tours & Travel can prepare an accurate Kenya quote for education, NGO or safari travel.",
   },
-  emergency: {
-    title: "Emergency Contact | 67 Tours & Travel Kenya",
-    description: "24-hour emergency contact for active 67 Tours & Travel programmes in Kenya. For urgent field coordination only.",
+  nairobi: {
+    title: "Nairobi Guide | Kenya Programme Hub | 67 Tours",
+    description: "Nairobi as church, chama, corporate, education and NGO hub: museums, conservation organisations, urban systems, retreat centres, and practical starting point for Kenya programmes.",
+  },
+  maasaiMara: {
+    title: "Maasai Mara Guide | Safari & Education | 67 Tours",
+    description: "Maasai Mara safari planning: wildlife viewing, migration timing, access options, and programme relevance for church groups, chamas, corporate groups, schools, and NGOs.",
+  },
+  amboseli: {
+    title: "Amboseli Guide | Wildlife & Kilimanjaro | 67 Tours",
+    description: "Amboseli safari and education: elephant populations, Kilimanjaro views, compact park size, and practical route planning for church groups, chamas, corporate groups, schools, and NGOs.",
+  },
+  coastWatamu: {
+    title: "Watamu Coast Guide | Marine & Education | 67 Tours",
+    description: "Watamu marine park, coastal education, mangrove ecosystems, and practical planning for coastal programmes and leisure travel for church groups, chamas, corporate groups, schools, and NGOs.",
+  },
+  naivashaNakuru: {
+    title: "Naivasha & Nakuru Guide | Rift Valley | 67 Tours",
+    description: "Rift Valley destinations: freshwater ecology, geothermal energy, birdlife, and practical access for church groups, chamas, corporate groups, education groups, NGOs, and safari travellers.",
+  },
+  northernKenya: {
+    title: "Northern Kenya Guide | Field Logistics | 67 Tours",
+    description: "Northern Kenya and Turkana field logistics: remote access, vehicle planning, fuel and communication for church groups, chamas, corporate groups, schools, NGOs, and safari travellers.",
+  },
+  kakamega: {
+    title: "Kakamega Guide | Western Kenya | 67 Tours",
+    description: "Kakamega forest ecology, western Kenya community context, and education programme planning for forest and community studies for church groups, chamas, corporate groups, schools, and NGOs.",
   },
 };
 

@@ -104,11 +104,35 @@ export default function HowWeWork() {
 
       <section className="certifications-placeholder container">
         <div className="route-section__header"><RouteTick label="Certifications &amp; partnerships" /><div><h2>Formal recognition and industry relationships.</h2><p>This section is reserved for verified certifications, industry memberships, and partnership agreements. No unverified credentials will be listed.</p></div></div>
-        <div className="trust-placeholder">
-          <p><em>[Tourism Board Registration — For official tourism authority registration details]</em></p>
-          <p><em>[Industry Association Memberships — For relevant professional association memberships]</em></p>
-          <p><em>[Conservation Organisation Partnerships — For verified partnerships with conservation organisations]</em></p>
-          <p><em>[Safety Certifications — For any relevant safety or transport certifications]</em></p>
+        <div className="checklist">
+          <div className="checklist__item">
+            <strong>01</strong>
+            <div>
+              <h3>Kenya-side transport standards</h3>
+              <p>Every vehicle used on 67 Tours &amp; Travel programmes is assigned based on the route, group size, road condition and season. Pre-departure checks are documented before mobilisation, and backup transport options are confirmed on multi-day or multi-leg movements.</p>
+            </div>
+          </div>
+          <div className="checklist__item">
+            <strong>02</strong>
+            <div>
+              <h3>Accommodation due diligence</h3>
+              <p>Stays are pre-checked against rooming, meal timing, group access and proximity to the next stop. For education, NGO, and church groups, accommodation suitability extends beyond photos — we confirm capacity, supervision layout, dietary handling, and ground-floor accessibility where required.</p>
+            </div>
+          </div>
+          <div className="checklist__item">
+            <strong>03</strong>
+            <div>
+              <h3>Local coordination model</h3>
+              <p>Each route has a Kenya-side coordinator who owns the sequence: pickups, handovers, contact windows, and the response standard for when the plan changes. Coordinators are not call-centre staff—they know the route because they work on the route.</p>
+            </div>
+          </div>
+          <div className="checklist__item">
+            <strong>04</strong>
+            <div>
+              <h3>Emergency and contingency planning</h3>
+              <p>Every route sheet includes nearest medical facilities, nearest airstrip if applicable, local communication coverage expectations, and the 24-hour on-call contact for active programmes. Contingencies are written for the points most likely to change: weather, road condition, and site availability.</p>
+            </div>
+          </div>
         </div>
       </section>
 
